@@ -1,0 +1,13 @@
+div{                                                       
+	width:50%;
+    margin:auto;	 
+}
+
+.box{
+	background: orange;
+  	width: 30%;
+  	padding-bottom: 30%;/*这一段用来设置正方形的宽度*/
+  	float: left;
+  	margin: 1%;
+	border-radius:10%;
+}
