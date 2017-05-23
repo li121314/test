@@ -1,0 +1,61 @@
+*{
+	margin:0;
+	padding:0; 
+	font-family: 微软雅黑;
+	font-size: 62.5%;
+}
+
+body{
+	background-color: #68cdd5;
+	margin:0 auto;
+	
+}
+
+
+.nav{
+	margin-left:1%;
+	margin-top:1em;
+	height: 5.4em;
+	width: 5.4em;
+}
+
+.top{
+	width: 100%;
+	margin-top:1em;
+	text-align: center;
+}
+
+.top img{
+	height: 7em;
+	width: 18.1em;
+}
+
+.middle{
+	width:50%;
+	margin:5em auto;
+
+}
+
+.middle p{
+	font-size:5em;
+	color: white;
+}
+
+.bottom{
+	width: 50%;
+	margin:auto;
+	color: white;
+	font-size: 8em;
+}
+
+.bottomimg1{
+	width:25%;
+	float: left;
+	text-align: center;
+}
+
+.bottomimg2{
+	width:25%;
+	float: right;
+	text-align: center;
+}
