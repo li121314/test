@@ -16,16 +16,17 @@ body{
 
 .nav img{
 	display: inline-block;
+	vertical-align:middle;
 	float: left;
 	width: 1em;
 }
 
 .nav span{
 	display: inline-block; 
+	vertical-align: middle;
 	color: white;
 	font-size: 5em;	
 	color:white;
-	vertical-align: middle;
 }
 
 .top{
@@ -51,13 +52,14 @@ body{
 
 .s1{
 	font-size: 15em;
-	vertical-align: top;
+	vertical-align: middle;
 
 }
 
 .s2{
-	font-size: 13em;
-	vertical-align: top;
+	font-size: 12em;
+	vertical-align: middle;
+	margin-left: 1em;
 }
 
 .l1{
@@ -72,7 +74,7 @@ body{
 }
 
 .s3{
-	font-size: 5em;
+	font-size: 10em;
 	vertical-align: middle;
 }
 
@@ -90,7 +92,7 @@ body{
 }
 
 .middleul{
-	font-size:5em;
+	font-size:8em;
 	margin:auto 5%;
 	list-style:none;	
 }
