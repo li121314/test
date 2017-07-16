@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>护工界面</title>
+	<link rel="stylesheet" type="text/css" href="style/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style/TASK6-2.css">
+	<style type="text/css">
+	body{
+		font-size: 62.5%;
+
+	}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="border:none;background: rgb(95, 192, 205);width: 100%;">
+	<!-- bootstrap在这里只是使用了一个导航栏的基本组件，navbar-fixed-top的作用是让导航栏一直处于网页上方不会到处乱跑 -->
+
+		<div style="margin:0 auto;text-align: center;display: inline-block;padding:1.5% 0;width: 88%;">
+		
+		<!-- nav嵌套div，div居中设置。div嵌套button，button继承了div的居中设置，保证了在不同分辨率下button在nav里都是居中的。div设置width的原因是，给右边的img留下空间。不直接用nav嵌套button的原因是，减少难度和代码量。 -->
+		
+			
+			<button style="margin-left: 15%;color:white;background: rgb(85, 168, 179);width:20%;font-size: 2rem;border-radius: 0.5rem;padding:2%;border:none;">找雇主</button>
+		
+			<button style="margin-left: -3%;color:rgb(95, 192, 205);background: white;width: 20%;font-size: 2rem;border-radius: 0.5rem;padding:2%;border:none;">找护工</button>
+
+			
+		</div>
+		
+		<div style="float:right;margin-top: 2%; margin-right: 3%;width:42px;height: 44px; background: url(img/TASK6-2.PNG);background-position: 0 0;">
+		</div>
+		<!-- 这个img是直接嵌套在nav之下，利用浮动和margin的设定固定位置在nav的右边，并且可以自适应大小 -->
+
+		<div style="width:100%;">
+			<button style="width:33%;border:none;float: left;background: white;padding: 1%; color: rgb(175, 186, 192);font-size:2rem;border-bottom: 1px solid rgb(175, 186, 192);">
+
+				<span>所在地</span>
+				
+				<span style="display: inline-block;width:13px;height:9px;background:url(img/TASK6-2.PNG);background-position: 0-53px;"></span>
+			</button>
+			
+			<button style="width:34%;border:none;border-right:1px solid rgb(175, 186, 192);border-left:1px solid rgb(175, 186, 192);float: left;background: white;padding: 1%; color: rgb(175, 186, 192);font-size:2rem;border-bottom: 1px solid rgb(175, 186, 192);">
+
+				<span>食宿</span>
+
+				<span style="display: inline-block;width:13px;height:9px;background:url(img/TASK6-2.PNG);background-position: 0-53px;"></span>
+			</button>
+			
+			<button style="width:33%;border:none;float: left;background: white;padding: 1%; color: rgb(175, 186, 192);font-size:2rem;border-bottom: 1px solid rgb(175, 186, 192)">
+
+				<span>病人情况</span>
+
+				<span style="display: inline-block;width:13px;height:9px;background:url(img/TASK6-2.PNG);background-position: 0-53px;"></span>
+			</button>
+		</div>
+		<!--在上面这个div中，三个button都采用了浮动和width的设置，这样才能保证在不同分辨率中，这三个button都能保持在一行，虽然从栅格系统上考虑，这样的设置是不对的，但是因为具体的要求，所以就只能先这样了。-->
+	</nav>
+<ul class="list-group" style="padding-top:20%;">
+           <!-- 上面的导航栏会一直出现在页面顶部，所以这一部分的列表需要用一个内边距把内容往下移动，才能在第一次加载页面的时候看到 -->
+           <!-- 下面是重复的 -->
+    	<li class="list-group-item">
+    			<div style="color: rgb(175, 186, 192);">
+    				<span style="float:left;margin-right: 1%; background: url(img/TASK6-2.PNG);background-position: 0 -65px;width:24px;height:24px;"></span>
+    				服务日期
+            </div>
+   		
+         	<div style="color: rgb(51, 51, 51);margin:1% auto">
+            	
+            	2015-7-5至2015-7-12;            	
+            	<span style="float:right;display: inline-block;vertical-align: middle; background: url(img/TASK6-2.PNG);background-position: 0 -125px;width:19px;height:33px;"></span>
+            	<span style="color: red;float:right;display: inline-block;vertical-align: middle;">25元/小时</span>
+
+            </div>
+       
+      
+            <div style ="color: rgb(175, 186, 192);">
+            	<span style="float:left;margin-right: 1%; background: url(img/TASK6-2.PNG);background-position: 0 -95px;width:19px;height:23px;"></span>
+            	北京.通州.果园
+            </div>
+        </li>
+        <li class="list-group-item">
+    			<div style="color: rgb(175, 186, 192);">
+    				<span style="float:left;margin-right: 1%; background: url(img/TASK6-2.PNG);background-position: 0 -65px;width:24px;height:24px;"></span>
+    				服务日期
+            </div>
+   		
+         	<div style="color: rgb(51, 51, 51);margin:1% auto">
+            	
+            	2015-7-5至2015-7-12;            	
+            	<span style="float:right;display: inline-block;vertical-align: middle; background: url(img/TASK6-2.PNG);background-position: 0 -125px;width:19px;height:33px;"></span>
+            	<span style="color: red;float:right;display: inline-block;vertical-align: middle;">25元/小时</span>
+
+            </div>
+       
+      
+            <div style ="color: rgb(175, 186, 192);">
+            	<span style="float:left;margin-right: 1%; background: url(img/TASK6-2.PNG);background-position: 0 -95px;width:19px;height:23px;"></span>
+            	北京.通州.果园
+            </div>
+        </li>
+        <li class="list-group-item">
+    			<div style="color: rgb(175, 186, 192);">
+    				<span style="float:left;margin-right: 1%; background: url(img/TASK6-2.PNG);background-position: 0 -65px;width:24px;height:24px;"></span>
+    				服务日期
+            </div>
+   		
+         	<div style="color: rgb(51, 51, 51);margin:1% auto">
+            	
+            	2015-7-5至2015-7-12;            	
+            	<span style="float:right;display: inline-block;vertical-align: middle; background: url(img/TASK6-2.PNG);background-position: 0 -125px;width:19px;height:33px;"></span>
+            	<span style="color: red;float:right;display: inline-block;vertical-align: middle;">25元/小时</span>
+
+            </div>
+       
+      
+            <div style ="color: rgb(175, 186, 192);">
+            	<span style="float:left;margin-right: 1%; background: url(img/TASK6-2.PNG);background-position: 0 -95px;width:19px;height:23px;"></span>
+            	北京.通州.果园
+            </div>
+        </li>
+        <li class="list-group-item">
+    			<div style="color: rgb(175, 186, 192);">
+    				<span style="float:left;margin-right: 1%; background: url(img/TASK6-2.PNG);background-position: 0 -65px;width:24px;height:24px;"></span>
+    				服务日期
+            </div>
+   		
+         	<div style="color: rgb(51, 51, 51);margin:1% auto">
+            	
+            	2015-7-5至2015-7-12;            	
+            	<span style="float:right;display: inline-block;vertical-align: middle; background: url(img/TASK6-2.PNG);background-position: 0 -125px;width:19px;height:33px;"></span>
+            	<span style="color: red;float:right;display: inline-block;vertical-align: middle;">25元/小时</span>
+
+            </div>
+       
+      
+            <div style ="color: rgb(175, 186, 192);">
+            	<span style="float:left;margin-right: 1%; background: url(img/TASK6-2.PNG);background-position: 0 -95px;width:19px;height:23px;"></span>
+            	北京.通州.果园
+            </div>
+        </li>
+        <li class="list-group-item">
+    			<div style="color: rgb(175, 186, 192);">
+    				<span style="float:left;margin-right: 1%; background: url(img/TASK6-2.PNG);background-position: 0 -65px;width:24px;height:24px;"></span>
+    				服务日期
+            </div>
+   		
+         	<div style="color: rgb(51, 51, 51);margin:1% auto">
+            	
+            	2015-7-5至2015-7-12;            	
+            	<span style="float:right;display: inline-block;vertical-align: middle; background: url(img/TASK6-2.PNG);background-position: 0 -125px;width:19px;height:33px;"></span>
+            	<span style="color: red;float:right;display: inline-block;vertical-align: middle;">25元/小时</span>
+
+            </div>
+       
+      
+            <div style ="color: rgb(175, 186, 192);">
+            	<span style="float:left;margin-right: 1%; background: url(img/TASK6-2.PNG);background-position: 0 -95px;width:19px;height:23px;"></span>
+            	北京.通州.果园
+            </div>
+        </li>
+</ul>
+	  <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation" style="width: 100%; background-color: rgb(248, 250, 251);text-align: center;padding:2%;">
+    	  
+    	  <div style ="display: inline-block; text-align: center;vertical-align: middle;">
+            
+            <span style="display: inline-block; width: 46px; height: 40px;background:url(img/TASK6-2.png);background-position: 0 -200px;"></span>
+            <br>
+            <span style="color: rgb(95, 192, 205);display: inline-block; ">首页</span>
+            
+        </div>
+        
+        <div style ="display: inline-block;vertical-align: middle;margin:0 15%;">
+        <!-- 利用设置宽度与外边距的百分比来显示居中效果 -->
+           <span style="display: inline-block; width: 94px; height: 95px;background:url(img/TASK6-2.png);background-position: 0 -243px;"></span>
+           
+        </div>
+
+        <div style="display: inline-block;text-align: center;vertical-align: middle;">
+            
+            <span style="display: inline-block; width: 42px; height: 41px;background:url(img/TASK6-2.png);background-position: 0 -159px;"></span>
+            <br>
+            <span style="color: rgb(200, 201, 202);">我的</span>
+         
+        </div>
+    </nav>
+	
+
+		
+</body>
+</html>

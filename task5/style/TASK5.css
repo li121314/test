@@ -1,12 +1,16 @@
 *{
-	margin:0;
+	margin:0 auto; 
 	padding: 0;
-	font-size: 62.5%;
+	font-size:62.5%;
+	font-family: 微软雅黑;
+	max-width: 640px;
+
+
 }
 body{
 	width:100%;
 	max-width: 640px;
-	margin:auto;
+	margin:0 auto;
 }
 .nav{
 	width:98%;
