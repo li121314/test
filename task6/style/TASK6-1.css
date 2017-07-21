@@ -42,7 +42,7 @@ body{
 	margin-right: 3%;
 	width:42px;
 	height: 44px; 
-	background: url(../img/TASK6-2.PNG);
+	background: url(../img/TASK6-2.png);
 	background-position: 0 0;
 }
 
@@ -65,12 +65,12 @@ body{
 	display: inline-block;
 	width:13px;
 	height:9px;
-	background:url(../img/TASK6-2.PNG);
+	background: url(../img/TASK6-2.png);
 	background-position: 0-53px;
 }
 
 .topd3bu2{
-	width:33%;
+	width:34%;
 	float: left;
 	border:none;
 	border-right:1px solid rgb(175, 186, 192);
@@ -95,42 +95,51 @@ body{
 }
 
 .middlespan1{
-	float:left;
+	display:inline-block;
+	vertical-align:middle;
+	margin-right:1%;
 	width:24px;
 	height:24px;
-	margin-right: 1%; 
-	background: url(../img/TASK6-2.PNG);
+	background: url(../img/TASK6-2.png);
 	background-position: 0 -65px;
+
 }
 
 .middlespancolor{
 	color: rgb(175, 186, 192);
+	display:inline-block;
+	vertical-align:middle;
+	
 }
 
 .middlediv{
 	color: rgb(51, 51, 51);
-	margin:1% auto
+	margin:1% auto;
+	
+
 }
 
 .middlespan2{
-	float:right;
-	display: inline-block;
-	vertical-align: middle; 
-	background: url(../img/TASK6-2.PNG);
-	background-position: 0 -125px;
+	display:inline-block;
+	vertical-align:middle;
 	width:19px;
 	height:33px;
+	background: url(../img/TASK6-2.png);
+	background-position: 0 -125px;
+	
 }
 
 .middlered{
 	color: red;
-	float:right;
+
+
 }
 
 .middlespan3{
-	float:left;
+	display:inline-block;
+	vertical-align:middle;
 	margin-right: 1%; 
-	background: url(../img/TASK6-2.PNG);
+	background: url(../img/TASK6-2.png);
 	background-position: 0 -95px;
 	width:19px;
 	height:23px;
