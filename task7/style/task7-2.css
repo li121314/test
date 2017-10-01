@@ -1,0 +1,46 @@
+body{
+	max-width:640px;
+	
+	width:100%;
+
+	margin:0 auto;
+	
+	
+}
+
+.click{
+	width:136px;
+	height:136px;
+	padding:0;
+	text-align:center;
+	margin:0 5%;
+
+}
+.pi{
+	display: none;
+	margin-top:21px;
+	
+
+}
+.pi div{
+	display:inline-block;
+	width:28px;
+	height:28px;
+	background-color:white;
+	position:relative;
+
+
+}
+.pi p{
+	width: 50%; 
+  	height: 50%; 
+  	overflow: auto; 
+  	margin: auto; 
+  	position: absolute; 
+  	top: 0; left: 0; bottom: 0; right: 0; 
+
+
+}
+.click:hover  .pi {
+	display:block;
+}
