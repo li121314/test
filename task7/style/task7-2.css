@@ -44,3 +44,30 @@ body{
 .click:hover  .pi {
 	display:block;
 }
+
+.middlediv{
+	border:5px solid white;
+	background-color:#f5c97b;
+	width: 17vh;
+	height: 15vh; 
+	margin:0 auto;
+	position:relative;
+
+}
+
+.middledivspan1{
+	display: inline-block; 
+	color:#71685b;
+	font-size: 4vh;
+	margin-top:20%;
+}
+
+.middledivspan2{
+	display: block; 
+	color:black;
+	background-color:#83b09a;
+	color: white;
+	position:absolute;
+	bottom:0;
+	width: 100%;
+}
