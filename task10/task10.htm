@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style/bootstrap.min.css">
+<link rel="stylesheet" href="style/task10.css">
+<script src="js/jquery2.1.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<title>51包装网</title>
+<style type="text/css">
+
+input[type=radio] {
+	display: none;
+}
+/*按钮消失*/
+input[type=radio] + span {
+	border-radius: 50%; 
+	border: 1px solid rgb(215, 215, 215);
+	width: 18px; 
+	height: 18px; 
+	margin-right: 5px; 
+	margin-bottom: 3px; 
+	vertical-align: middle; 
+	display: inline-block; 
+
+}
+/*空白span的作用，模拟一个按钮*/
+input[type=radio]:checked + span {
+	border: 0.6rem solid rgb(29, 122, 217);
+}	
+/*空白span的作用，模拟按钮被点击后的效果*/
+a{
+	color: #999;
+}
+a:hover{
+	color: #1d7ad9;
+	text-decoration: none;
+}
+</style>
+</head>
+<body>
+<div style="background-color:#1d7ad9;overflow: hidden;height: 30px;">
+	<span style="color:white;line-height: 30px;margin-left: 10%;">客服热线：010-594-78634
+	</span>
+	<div class="topdiv1" style="display: inline-block;float: right;margin-right: 20%;line-height: 30px;">
+		<button style="border-left: 1px solid white;background-color:#1d7ad9;color:white;float:left;padding: 0 10px;">登陆</button>
+		<button style="background-color: white;float: left;padding:0 20px;">注册</button>
+	</div>
+</div>
+<div style="width:70%;margin: 0 auto;margin-top: 2%;">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-sm-offset-3 col-md-12 col-md-offset-5 col-lg-12  col-lg-offset-5">
+				<button style="border:1px solid rgb(230,230,230); display: inline-block;background-color: rgb(29, 122,217);padding:1rem 2rem;color: white;border-radius: 5px;">首页</button>
+					
+				<button style="border:1px solid rgb(230,230,230); display: inline-block;background-color: white;padding:1rem 2rem;border-radius: 5px;">在线订制</button>
+				<button style="border:1px solid rgb(230,230,230); display: inline-block;background-color: white;padding:1rem 2rem;border-radius: 5px;">标准箱</button>
+				<button style="border:1px solid rgb(230,230,230); display: inline-block;background-color: white;padding:1rem 2rem;border-radius: 5px;">品质保障</button>
+			</div>
+		</div>
+		<div class="row" style="font-size: 0;">
+		<!--font-size保证格式不出错-->
+			<div class="col-sm-12 col-xs-12 col-md-10 col-md-offset-2 col-lg-6 col-lg-offset-5" style="padding:3rem 0 5rem 0 ;">
+				<div style="width:25%;text-align: center;display: inline-block;position: relative;">
+					<div style="position:relative;;z-index:9;display:inline-block; width:1.8rem;border-radius: 50%;color:white;text-align: center;background-color:orange;font-size: 1.4rem;">1</div>
+					<div style="width: 100%;height:0.3rem;background-color: orange;position: absolute;top:40%;"></div>
+					<div style="width: 100%;text-align: center;font-size: 1.4rem;position: absolute;top:100%;">
+						1.定制纸箱
+					</div>
+				</div>
+				<div style="width:25%;text-align: center;display: inline-block;position: relative;">
+					<div style="position:relative;;z-index:9;display:inline-block; width:1.8rem;border-radius: 50%;color:white;text-align: center;background-color:#ccc;font-size: 1.4rem;">2</div>
+					<div style="width: 100%;height:0.3rem;background-color: #ccc;position: absolute;top:40%;"></div>
+					<div style="width: 100%;text-align: center;font-size: 1.4rem;position: absolute;top:100%;">
+						2.选择数量
+					</div>
+				</div>
+				<div style="width:25%;text-align: center;display: inline-block;position: relative;">
+					<div style="position:relative;;z-index:9;display:inline-block; width:1.8rem;border-radius: 50%;color:white;text-align: center;background-color:#ccc;font-size: 1.4rem;">3</div>
+					<div style="width: 100%;height:0.3rem;background-color: #ccc;position: absolute;top:40%;"></div>
+					<div style="width: 100%;text-align: center;font-size: 1.4rem;position: absolute;top:100%;">
+						3.上传附件
+					</div>
+				</div>
+				<div style="width:25%;text-align: center;display: inline-block;position: relative;">
+					<div style="position:relative;;z-index:9;display:inline-block; width:1.8rem;border-radius: 50%;color:white;text-align: center;background-color:#ccc;font-size: 1.4rem;">4</div>
+					<div style="width: 100%;height:0.3rem;background-color: #ccc;position: absolute;top:40%;"></div>
+					<div style="width: 100%;text-align: center;font-size: 1.4rem;position: absolute;top:100%;">
+						4.确认下单
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-xs-12 col-md-12  col-lg-12">
+
+				<div style="height:2rem;width:0.3rem; display: inline-block;background-color:#1d7ad9;border-radius: 20%;vertical-align: bottom;"></div>
+				<strong style="display: inline-block; font-size: 2rem;vertical-align: bottom;">请您按照以下步骤来定制您的纸箱</strong>
+			</div>
+			<div class="col-sm-12 col-xs-12 col-md-12  col-lg-12" style="margin-top: 1rem;">
+				<span style="background: url(img/task10.png);background-position: 0px 0px;width: 21px;height: 20px;display: inline-block;vertical-align: middle;"></span>
+				<strong style="display: inline-block;vertical-align: middle;color:#1d7ad9;font-size: 2rem;">选择箱型</strong>
+			</div>
+			<div class="col-lg-8 col-md-10 col-sm-12 col-xs-12" style="font-size: 2rem;color: rgb(153, 153, 153);margin:5% 0;padding-left: 10%;">
+                <form action="#">
+                   	<label for="boxtype1" style="cursor: pointer;">
+	                    <input type="radio" name="boxtype" id="boxtype1">
+	                    <span></span>
+	                    <!--空白的span模拟按钮-->
+	                    对口箱
+	            	</label>
+	                <label for="boxtype2" style="cursor: pointer;">
+	                   	<input type="radio" name="boxtype" id="boxtype2">
+	                    <span></span>
+	                    飞机盒
+	                </label>
+	                <label for="boxtype3"  style="cursor: pointer;">
+	                    <input type="radio" name="boxtype" id="boxtype3">
+	                    <span></span>
+	                    天地盖
+	                </label>
+	            </form>
+	        </div>
+	        <label class="col-lg-4 col-md-2 col-sm-12 col-xs-10" style="margin: 5% 0;">
+               	<select class="pull-right" style="background: url(img/task10button.png) no-repeat 90%; padding: 0.5rem 3rem 0.5rem 1rem; border: 1px solid rgb(232, 232, 232); border-image: none; color: rgb(169, 169, 169); font-size: 1.4rem; float: right; -webkit-appearance: none; appearance: none; -moz-appearance: none;">
+                    <option value="#">查看详情</option>
+                </select>
+            </label>
+            <div class="col-sm-12 col-xs-12 col-md-12  col-lg-12" style="margin-top: 1rem;">
+				<span style="background: url(img/task10.png);background-position: -22px 0px;width:22px; height: 20px;display: inline-block;vertical-align: middle;"></span>
+				<strong style="display: inline-block;vertical-align: middle;color:#1d7ad9;font-size: 2rem;">确定尺寸</strong>
+			</div>
+			<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12" style="margin:3% 0;">
+				<div class="col-lg-12 col-sm-12 col-xs-12 col-md-12" style="margin:1% 0;padding-left: 10%;">
+	                <form action="#">
+	                   	<label for="boxsize1" style="cursor: pointer;">
+		                    <input type="radio" name="boxrule" id="boxsize1">
+		                    <span></span>
+		                    外径
+		            	</label>
+		                <label for="sizetext">
+		                   	长
+		                   	<input type="text" name="boxsize" style="width:5rem;">
+		                    mm
+		                </label>
+		                 <label for="sizetext">
+		                   	宽
+		                   	<input type="text" name="boxsize" style="width:5rem;">
+		                    mm
+		                </label>
+		                  <label for="sizetext">
+		                   	高
+		                   	<input type="text" name="boxsize" style="width:5rem;">
+		                    mm
+		                </label>
+		            </form>
+		        </div>
+		        <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12" style="margin:1% 0;padding-left: 10%;">
+	                <form action="#">
+	                   	<label for="boxsize2" style="cursor: pointer;">
+		                    <input type="radio" name="boxrule" id="boxsize2">
+		                    <span></span>
+		                    内径
+		            	</label>
+		                <label for="sizetext">
+		                   	长
+		                   	<input type="text" name="boxsize" style="width:5rem;">
+		                    mm
+		                </label>
+		                 <label for="sizetext">
+		                   	宽
+		                   	<input type="text" name="boxsize" style="width:5rem;">
+		                    mm
+		                </label>
+		                  <label for="sizetext">
+		                   	高
+		                   	<input type="text" name="boxsize" style="width:5rem;">
+		                    mm
+		                </label>
+		            </form>
+		        </div>
+		    </div>
+		    <label class="main-form-type-select col-lg-2 col-md-2 col-sm-12 col-xs-10" style="margin: 5% 0;">
+               	<select class="pull-right" style="background: url(img/task10button.png) no-repeat 90%; padding: 0.5rem 3rem 0.5rem 1rem; border: 1px solid rgb(232, 232, 232); border-image: none; color: rgb(169, 169, 169); font-size: 1.4rem; float: right; -webkit-appearance: none; appearance: none; -moz-appearance: none;">
+                    <option value="#">查看详情</option>
+                </select>
+            </label>
+		
+		<div class="col-sm-12 col-xs-12 col-md-12  col-lg-12" style="margin-top: 1rem;">
+				<span style="background: url(img/task10.png);background-position: -43px 0px;width: 22px;height: 20px;display: inline-block;vertical-align: middle;"></span>
+				<strong style="display: inline-block;vertical-align: middle;color:#1d7ad9;font-size: 2rem;">选择材质</strong>
+			</div>
+			<div class="col-lg-11 col-md-11 col-sm-12 col-xs-12" style="font-size: 1.5rem;color:#737374;margin:5% 0;padding-left: 10%;">
+                <form action="#">
+                   	<label for="material-test1" style="cursor: pointer;">
+	                    <input type="radio" name="box-material" id="material-test1">
+	                    <span></span>
+	                    三层A瓦优质
+	            	</label>
+	                <label for="material-test2" style="cursor: pointer;">
+	                    <input type="radio" name="box-material" id="material-test2">
+	                    <span></span>
+	                    三层B瓦优质
+	            	</label>
+	                <label for="material-test3" style="cursor: pointer;">
+	                    <input type="radio" name="box-material" id="material-test3">
+	                    <span></span>
+	                    三层C瓦优质
+	            	</label>
+	            	<label for="material-test4" style="cursor: pointer;">
+	                    <input type="radio" name="box-material" id="material-test4">
+	                    <span></span>
+	                    三层D瓦优质
+	            	</label>
+	            	<label for="material-test5" style="cursor: pointer;">
+	                    <input type="radio" name="box-material" id="material-test5">
+	                    <span></span>
+	                    三层E瓦优质
+	            	</label>
+	            </form>
+	        </div>
+	        <label class="col-lg-1 col-md-1 col-sm-12 col-xs-10" style="margin: 4% 0;">
+               	<select class="pull-right" style="background: url(img/task10button.png) no-repeat 90%; padding: 0.5rem 3rem 0.5rem 1rem; border: 1px solid rgb(232, 232, 232); border-image: none; color: rgb(169, 169, 169); font-size: 1.4rem; float: right; -webkit-appearance: none; appearance: none; -moz-appearance: none;">
+                    <option value="#">查看详情</option>
+                </select>
+            </label>
+        </div>
+        <div class="row" style="text-align: center;margin-top: 5rem;">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            	<button style="color: white;border:none;border-radius: 5px;background-color:#e15053;padding:5px 20px;font-size: 2rem;">下一步</button>
+            </div>
+
+		</div>
+	
+	</div>
+
+</div>
+
+<div style="width: 100%;background-color: rgb(244, 244, 244);margin-top: 10%;padding-bottom: 3%;color:#999; ">
+<div class="container-fluid">    
+    <div class="row" style="margin:0;">
+        
+        <div class="col-xs-12 col-sm-5 col-md-4 col-lg-4" style="margin-top:2%;padding-left: 10%;">
+            <p>
+              	51包装网—纸箱包装首选服务平台
+            </p>
+        </div>
+        
+        <div class="col-xs-12 col-sm-7 col-md-6 col-lg-4" style="margin-top:2%;padding-left: 10%;">
+        	 <ul >
+                    <li style="display: inline-block;"><a href="#" style="color:#1d7ad9;">关于我们</a></li>
+                    <li style="display: inline-block;"><a href="#">配送流程</a></li>
+                    <li style="display: inline-block;"><a href="#">联系我们</a></li>
+                    
+             </ul>
+             <ul>
+             	<li style="display: inline-block;"><a href="#">下单指南</a></li>
+                    <li style="display: inline-block;"><a href="#">媒体介绍</a></li>
+             </ul>   
+        </div>
+        
+        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-4" style="margin-top:2%;padding-left: 10%;">
+        	 <span style="display: inline-block;vertical-align: top;">
+                TEL:400-0000-000 <br>
+                企业QQ：123456789 <br>
+                微信号：XXXXXXX
+            </span>    
+            <span style="background: url(img/task10.png);background-position: 0px -21px;display: inline-block;width: 92px;height: 92px;"></span>
+        </div>
+    </div>
+</div>
+</div>
+<div style="background-color:#1d7ad9;text-align: center;color: white;font-size: 0.5rem;width: 100%;padding: 1rem 0;" >
+    <strong>北京大美诚品包装科技有限公司Copyright ©2015
+        &nbsp;&nbsp;&nbsp;&nbsp;51baozhuang.com
+        &nbsp;&nbsp;All rights reserved.&nbsp;&nbsp;
+        京公网安备 11011502002595号</strong>
+</div>
+		                   
+
+
+
+				
+			
+			
+
+
+</body>
+</html>

@@ -35,16 +35,39 @@ body{
 	height: 24px;
 }
 
-.headnav li a{
-    padding: 1.9rem 1.6rem; width: 6rem;
+.navbar-nav {
+	float: right;
 }
-.headnav a:hover{
-    text-decoration: none; border-bottom:3px solid white; 
+
+.navbar-nav > li a {
+	height: 5rem;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	background: #29b078;
+	color: #fff !important;
+	
 }
-/*导航栏右侧底下白线条*/
+
+.navbar-nav > li a:hover {
+	border-bottom: 4px solid #fff;
+}
+
+@media only screen and (max-width: 767px) {
 
 
+
+
+	
+	.navbar-nav {
+		margin:0;
+		padding:0;
+		width:100%;
+		text-align:center;
+	}
 }
+
+
+
 
 .bottomdiv1{
 	width: 100%;
@@ -97,3 +120,5 @@ body{
    color:#26a26f;
 }
 /*列表的格式*/
+
+
