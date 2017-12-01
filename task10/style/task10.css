@@ -4,7 +4,6 @@
 }
 
 body{
-	min-width:640px;
 	font-family: 微软雅黑;
 	width:100%;
 }
@@ -14,4 +13,32 @@ body{
 	font-size:1.8rem;
 
 
+}
+.middleform1{
+	font-size:1.8rem;
+}
+
+.middleform2{
+	font-size:1.8rem;
+	text-align:left;
+
+
+
+}
+
+@media only screen and (max-width: 767px) { 
+	.middleform1{
+		text-align:center;
+	}
+	.middleform1 form label{
+		display:block;
+
+	}
+
+}
+
+@media only screen and (max-width: 992px) {
+	.middleform2{
+		text-align:center;
+	}
 }
