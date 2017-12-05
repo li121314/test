@@ -6,7 +6,7 @@
 body {
     margin: 0 auto;
     padding: 0;
-    max-width: 640px;
+    max-width: 640px
 }
 
 .nav {
@@ -16,65 +16,68 @@ body {
     overflow: hidden;
     text-align: center;
     height: 3rem;
-    padding:1rem 0;
-}
+    padding: 1rem 0;
 
-.nav p {
+
+    p {
     display: inline-block;
-    line-height: 3rem;
+    line-height: 3rem
+    }
 }
 
 .navmiddle {
-    font-size: 2rem;
+    font-size: 2rem
 }
 
 .navright {
     float: right;
     margin-right: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.5rem
 }
 
 .navleft {
     float: left;
     margin-left: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.5rem
 }
 
-.inputword {
+ul {
     list-style: none;
     background-color: #eff0f4;
-    padding:1rem 0;
+    padding: 1rem 0;
+
 
     li {
-        background: white;
-        margin-top: 1rem;
+    background: white;
+    margin-top: 1rem;
     }
+}
 
     img {
-        margin:1rem 1rem;
-        vertical-align: middle;
-		width:1rem;
-	}
+    margin: 1rem 1rem;
+    vertical-align: middle;
+    width: 1rem;
+    }
+
     input {
-        padding-left: 1rem;
-        vertical-align: middle;
-        border: none;
-        border-left: 1px solid #eff0f4;
-        font-size:1rem;
-        }
-}
+    padding-left: 1rem;
+    vertical-align: middle;
+    border: none;
+    border-left: 1px solid #eff0f4;
+    font-size: 1rem;
+    }
 
-.login{
-	width:100%;
-	background-color: #5fc0cd;
+.login {
+    width: 100%;
+    background-color: #5fc0cd;
     color: white;
-	border:none;
-	font-size:2rem;
-	padding:1rem 0;
+    border: none;
+    font-size: 2rem;
+    padding: 1rem 0
 }
 
-.bottomword{
-	float:right;
-	font-size:1.5rem;
-	color:#5fc0cd;
+.bottomword {
+    float: right;
+    font-size: 1.5rem;
+    color: #5fc0cd
 }

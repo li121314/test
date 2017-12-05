@@ -1,6 +1,11 @@
-* {
-    margin: 0;
-    padding: 0
+$c1 : #5fc0cd !default;
+$c2 : #eff0f4 !default;
+$c3 : white !default;
+$widthfull : 100% !default;
+
+*{
+    margin:0;
+    padding:0;
 }
 
 body {
@@ -10,18 +15,18 @@ body {
 }
 
 .nav {
-    width: 100%;
-    background-color: #5fc0cd;
-    color: white;
+    width: $widthfull;
+    background-color: $c1;
+    color: $c3;
     overflow: hidden;
     text-align: center;
     height: 3rem;
-    padding: 1rem 0
-}
+    padding: 1rem 0;
 
-.nav p {
+    p {
     display: inline-block;
-    line-height: 3rem
+    line-height: 3rem;
+    }
 }
 
 .navmiddle {
@@ -40,35 +45,34 @@ body {
     font-size: 1.5rem
 }
 
-ul {
+.inputword {
     list-style: none;
-    background-color: #eff0f4;
-    padding: 1rem 0
-}
+    background-color: $c2;
+    padding: 1rem 0;
+    li {
+    background: $c3;
+    margin-top: 1rem;
+    }
 
-ul li {
-    background: white;
-    margin-top: 1rem
-}
-
-img {
+    img {
     margin: 1rem 1rem;
     vertical-align: middle;
-    width: 1rem
-}
+    width: 1rem;
+    }
 
-input {
+    input {
     padding-left: 1rem;
     vertical-align: middle;
     border: none;
-    border-left: 1px solid #eff0f4;
-    font-size: 1rem
+    border-left: 1px solid $c2;
+    font-size: 1rem;
+    }
 }
 
 .login {
-    width: 100%;
-    background-color: #5fc0cd;
-    color: white;
+    width: $widthfull;
+    background-color: $c1;
+    color: $c3;
     border: none;
     font-size: 2rem;
     padding: 1rem 0
@@ -77,6 +81,6 @@ input {
 .bottomword {
     float: right;
     font-size: 1.5rem;
-    color: #5fc0cd
+    color: $c1
 }
-/*# sourceMappingURL=task11.css.map */
+
