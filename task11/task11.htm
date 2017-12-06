@@ -5,23 +5,29 @@
 	<title>task11</title>
 	<link href="style/task11.css" rel="stylesheet" type="text/css" >
 </head>
-
+ <body ondragstart="return false">
 <body>
 <div class="nav">
-    <p class="navleft">关闭</p>
+    <button class="navleft">关闭</button>
     <p class="navmiddle">登陆</p>
-    <p class="navright">注册</p>
+    <button class="navright">注册</button>
 </div>
-<ul>
-    <li>
-        <img src="img/TASK11user.png" />
-        <input type="text" placeholder="请输入手机号" maxlength="11" />
-    </li>
-    <li>
-        <img src="img/TASK11password.png" />
-        <input type="text" placeholder="请输入密码" />
-    </li>
-</ul>
+<form>
+    <ul>
+        <li>
+            <label for="phonenumber">
+                <img src="img/TASK11user.png" />
+                <input type="text" placeholder="请输入手机号" maxlength="11" id="phonenumber" />
+            </label>
+        </li>
+        <li>
+            <label for="password">
+                <img src="img/TASK11password.png" />
+                <input type="text" id="password" placeholder="请输入密码" />
+            </label>
+        </li>
+    </ul>
+</form>
 <button type="button" class="login">登&nbsp;陆</button>
 <p class="bottomword">忘记密码?</p>
 
