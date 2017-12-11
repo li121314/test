@@ -4,10 +4,10 @@
 }
 
 body {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
-    max-width: 640px;
-    min-width: 320px;
+    font-family:    Microsoft YaHei;
+
 }
 
 .nav {
@@ -16,25 +16,25 @@ body {
     color: white;
     overflow: hidden;
     text-align: center;
-    height: 3rem;
+    height: 2rem;
     padding: 1rem 0;
 
 
     p {
     display: inline-block;
-    line-height: 3rem;
-    font-size: 2rem;
+    line-height: 1.8rem;
+    font-size: 1.5rem;
     }
 }
 
 .navright {
     float: right;
     margin-right: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     background-color: #5fc0cd;
     color:white;
     border:none;
-    line-height:3rem;
+    line-height:2rem;
 }
 
 .navleft {
@@ -42,52 +42,87 @@ body {
     display:inline-block;
     vertical-align:middle;
     margin-left: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     background-color: #5fc0cd;
     color:white;
     border:none;
-    line-height:3rem;
+    line-height:2rem;
 }
 
+.imguser{
+    background-image:url(../img/TASK11user.png);
+    background-repeat: no-repeat;
+    display:inline-block;
+    background-size: 1.2rem;
+    width:1.5rem;
+    height:2rem;
+    padding-right:1rem;
+    border-right: 1px solid #eff0f4;
+    margin:0.5rem 1rem;
+    vertical-align:middle;
+}
+.imgpassword{
+    background-image:url(../img/TASK11password.png);
+    background-repeat: no-repeat;
+    background-size: 1.2rem;
+    display:inline-block;
+    width:1.5rem;
+    height:2rem;
+    padding-right:1rem;
+    border-right: 1px solid #eff0f4;
+    margin:0.5rem 1rem;
+    vertical-align:middle;
+}
 ul {
     list-style: none;
     background-color: #eff0f4;
     padding: 1rem 0;
+    overflow:hidden;
+
+    li{
+        background-color:white;
+        margin-top: 1rem;
+
+        input{
+            vertical-align:middle;
+            height:2rem;
+            border:none;
+            font-size:1rem;
 
 
+        }
 
-    li {
-    background: white;
-    margin-top: 1rem;
     }
+
 }
 
-    img {
-    margin: 1rem 1rem;
-    vertical-align: middle;
-    width: 1.3rem;
-    }
 
-    input {
-    padding-left: 1rem;
-    vertical-align: middle;
-    border: none;
-    border-left: 1px solid #eff0f4;
-    font-size: 1.3rem;
 
-    }
 
 .login {
     width: 100%;
     background-color: #5fc0cd;
     color: white;
     border: none;
-    font-size: 2rem;
-    padding: 1rem 0
+    font-size: 1.2rem;
+    padding: 0.5rem 0
 }
 
 .bottomword {
     float: right;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #5fc0cd
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #eff0f4;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #eff0f4;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #eff0f4;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:   #eff0f4;
 }
