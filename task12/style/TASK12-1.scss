@@ -1,0 +1,205 @@
+body {
+
+
+    margin: 0 auto;
+}
+.topnav{
+	position:fixed;
+	top:0;
+	z-index:999;
+	width:100%;
+}
+.top1 {
+    background-color: rgb(95, 192, 205);
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem 1rem;
+
+    a {
+        color: rgb(95, 192, 205);
+        text-decoration: none;
+    }
+    button {
+        border: none;
+        border-radius: 0.5rem;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    span {
+        background: url(../img/TASK6-2.png);
+        background-position: 0 0;
+        width: 42px;
+        height: 44px;
+        float: right;
+    }
+}
+
+.top1bu1 {
+    color: white;
+    background-color: rgb(85, 168, 179);
+}
+
+.top1bu2 {
+    margin-left: -1rem;
+    color: rgb(95, 192, 205);
+    background-color: white;
+}
+.top2{
+	background-color:white;
+	border-bottom:1px solid rgb(175, 186, 192);
+	font-size: 2rem;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+}
+
+.triangle {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    background: url(../img/TASK6-2.png);
+    background-position: 0 -54px;
+    margin-left:1rem;
+}
+
+.dropbtn {
+    color: #afbac0;
+    border-right: 1px solid rgb(175, 186, 192);
+    margin: 5% auto;
+    padding: 5% auto;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    border: 1px solid rgb(175, 186, 192);
+}
+
+.dropdown-content a {
+    color: rgb(175, 186, 192);
+    text-decoration: none;
+    display: block;
+    background-color: white;
+    border-bottom: 1px solid rgb(175, 186, 192);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.middle{
+	padding-top:20%;
+	border-bottom:1px solid #fff;
+	li{
+		border-right:none;
+		border-radius:none;
+	}
+	span{
+		display:inline-block;
+		vertical-align:middle;
+	}
+}
+
+.middlespan1{
+	margin-right:1%;
+	width:24px;
+	height:24px;
+	background: url(../img/TASK6-2.png);
+	background-position: 0 -65px;
+}
+
+.middlespancolor{
+	color: rgb(175, 186, 192);
+}
+
+.middlediv{
+	color: rgb(51, 51, 51);
+	margin:1% auto;
+
+
+}
+
+.middlespan2{
+	width:19px;
+	height:33px;
+	background: url(../img/TASK6-2.png);
+	background-position: 0 -125px;
+
+}
+
+.middlered{
+	color: red;
+
+
+}
+
+.middlespan3{
+	margin-right: 1%;
+	background: url(../img/TASK6-2.png);
+	background-position: 0 -95px;
+	width:19px;
+	height:23px;
+}
+.bottom{
+	position:fixed;
+	bottom:0;
+	width:100%;
+	z-index:999;
+	background-color:white;
+	text-align:center;
+	div{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	span{
+		display: inline-block;
+	}
+}
+.bottomdiv1{
+	text-align: center;
+}
+
+.bottomdiv1span1{
+	width: 46px;
+	height: 40px;
+	background:url(../img/TASK6-2.png);
+	background-position: 0 -200px;
+}
+
+.bottomdiv1span2{
+	color: rgb(95, 192, 205);
+}
+
+.bottomdiv2{
+	margin:0 15%;
+	span{
+	width: 94px;
+	height: 95px;
+	background:url(../img/TASK6-2.png);
+	background-position: 0 -243px;
+	}
+}
+
+
+
+.bottomdiv3{
+	text-align: center;
+}
+
+.bottomdiv3span1{
+
+	width: 42px;
+	height: 41px;
+	background:url(../img/TASK6-2.png);
+	background-position: 0 -159px;
+}
+
+.bottomdiv3span2{
+	color: rgb(200, 201, 202);
+}
+

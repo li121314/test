@@ -1,0 +1,242 @@
+body{
+	font-size: 62.5%;
+}
+
+.top{
+	border:none;
+	background: rgb(95, 192, 205);
+	width: 100%;
+}
+
+.topd1{
+	margin:0 auto;
+	text-align: center;
+	display: inline-block;
+	padding:1.5% 0;
+	width: 88%;
+}
+
+.topd1bu1{
+	margin-left: 15%;
+	color:white;
+	background: rgb(85, 168, 179);
+	width:20%;font-size: 2rem;
+	border-radius: 0.5rem;
+	padding:2%;
+	border:none;
+}
+
+.topd1bu2{
+	margin-left: -3%;
+	color:rgb(95, 192, 205);
+	background: white;width: 20%;
+	font-size: 2rem;
+	border-radius: 0.5rem;
+	padding:2%;
+	border:none;
+}
+
+.topd3bu1{
+	width:33%;
+	border:none;
+	float: left;
+	background: white;
+	padding: 1%; 
+	color: rgb(175, 186, 192);
+	font-size:2rem;
+	border-bottom: 1px solid rgb(175, 186, 192);
+}
+
+.topd3span{
+	display: inline-block;
+	width:13px;
+	height:9px;
+	background: url(../img/TASK6-2.png);
+	background-position: 0-53px;
+}
+
+.topd3bu2{
+	width:34%;
+	float: left;
+	border:none;
+	border-right:1px solid rgb(175, 186, 192);
+	border-left:1px solid rgb(175, 186, 192);
+	border-bottom: 1px solid rgb(175, 186, 192);
+	background: white;
+	padding: 1%; 
+	color: rgb(175, 186, 192);
+	font-size:2rem;
+	
+}
+
+.topd3bu3{
+	width:33%;
+	border:none;
+	float: left;
+	background: white;
+	padding: 1%; 
+	color: rgb(175, 186, 192);
+	font-size:2rem;
+	border-bottom: 1px solid rgb(175, 186, 192)
+}
+
+.middlespan1{
+	display:inline-block;
+	vertical-align:middle;
+	margin-right:1%;
+	width:24px;
+	height:24px;
+	background: url(../img/TASK6-2.png);
+	background-position: 0 -65px;
+
+}
+
+.middlespancolor{
+	color: rgb(175, 186, 192);
+	display:inline-block;
+	vertical-align:middle;
+	
+}
+
+.middlediv{
+	color: rgb(51, 51, 51);
+	margin:1% auto;
+	
+
+}
+
+.middlespan2{
+	display:inline-block;
+	vertical-align:middle;
+	width:19px;
+	height:33px;
+	background: url(../img/TASK6-2.png);
+	background-position: 0 -125px;
+	
+}
+
+.middlered{
+	color: red;
+
+
+}
+
+.middlespan3{
+	display:inline-block;
+	vertical-align:middle;
+	margin-right: 1%; 
+	background: url(../img/TASK6-2.png);
+	background-position: 0 -95px;
+	width:19px;
+	height:23px;
+}
+
+.bottom{
+	width: 100%; 
+	background-color: rgb(248, 250, 251);
+	text-align: center;
+	padding:2%;
+
+}
+
+.bottomdiv1{
+	display: inline-block; 
+	text-align: center;
+	vertical-align: middle;
+}
+
+.bottomdiv1span1{
+	display: inline-block; 
+	width: 46px; 
+	height: 40px;
+	background:url(../img/TASK6-2.png);
+	background-position: 0 -200px;
+}
+
+.bottomdiv1span2{
+	color: rgb(95, 192, 205);
+}
+
+.bottomdiv2{
+	display: inline-block;
+	vertical-align: middle;
+	margin:0 15%;
+}
+
+.bottomdiv2 span{
+	display: inline-block; 
+	width: 94px; 
+	height: 95px;
+	background:url(../img/TASK6-2.png);
+	background-position: 0 -243px;
+}
+
+.bottomdiv3{
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.bottomdiv3span1{
+	display: inline-block;
+	width: 42px;
+	height: 41px;
+	background:url(../img/TASK6-2.png);
+	background-position: 0 -159px;
+}
+
+.bottomdiv3span2{
+	color: rgb(200, 201, 202);
+}
+
+/* 容器 <div> - 需要定位下拉内容 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+}
+
+/* 下拉内容 (默认隐藏) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width:100%;
+    text-align: center;
+    border:1px solid rgb(175, 186, 192);
+}
+/* 下拉菜单的链接 */
+.dropdown-content a {
+    color:rgb(175, 186, 192);
+    text-decoration: none;
+    display: block;
+    background-color: white;
+    border-bottom:1px solid rgb(175, 186, 192);
+}
+
+
+/* 在鼠标移上去后显示下拉菜单 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.triangle{
+    display:inline-block;
+    width:13px;
+    height:8px;
+    background: url(../img/TASK6-2.png);
+    background-position: 0 -54px;
+
+}
+.dropbtn{
+    color:#afbac0;
+    border-right: 1px solid rgb(175, 186, 192);
+    margin:5% auto;
+    padding:5% auto;
+}
+
+.topd2{
+	background-color:white;
+	border-bottom:1px solid rgb(175, 186, 192);
+	font-size: 2rem;
+}
