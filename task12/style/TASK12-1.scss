@@ -1,16 +1,28 @@
 body {
-
-
     margin: 0 auto;
 }
-.topnav{
-	position:fixed;
-	top:0;
-	z-index:999;
-	width:100%;
+
+@mixin imgstyle($x, $y, $width, $height) {
+    background: url(../img/TASK6-2.png);
+    background-position: $x $y;
+    width: $width;
+    height: $height;
 }
+@mixin topbottomstyle{
+	position: fixed;
+	z-index: 999;
+    width: 100%;
+}
+$color1:white;
+
+.topnav {
+    @include topbottomstyle;
+    top: 0;
+
+}
+
 .top1 {
-    background-color: rgb(95, 192, 205);
+    background-color:rgb(95, 192, 205);
     overflow: hidden;
     text-align: center;
     padding: 1rem 1rem;
@@ -26,29 +38,28 @@ body {
         padding: 1rem;
     }
     span {
-        background: url(../img/TASK6-2.png);
-        background-position: 0 0;
-        width: 42px;
-        height: 44px;
+        @include imgstyle(0, 0, 42px, 44px);
         float: right;
     }
 }
 
 .top1bu1 {
-    color: white;
+    color: $color1;
     background-color: rgb(85, 168, 179);
 }
 
 .top1bu2 {
     margin-left: -1rem;
     color: rgb(95, 192, 205);
-    background-color: white;
+    background-color: $color1;
 }
-.top2{
-	background-color:white;
-	border-bottom:1px solid rgb(175, 186, 192);
-	font-size: 2rem;
+
+.top2 {
+    background-color: $color1;
+    border-bottom: 1px solid rgb(175, 186, 192);
+    font-size: 2rem;
 }
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -57,12 +68,9 @@ body {
 }
 
 .triangle {
+	@include imgstyle(0,-54px,13px,8px);
     display: inline-block;
-    width: 13px;
-    height: 8px;
-    background: url(../img/TASK6-2.png);
-    background-position: 0 -54px;
-    margin-left:1rem;
+    margin-left: 1rem;
 }
 
 .dropbtn {
@@ -84,7 +92,7 @@ body {
     color: rgb(175, 186, 192);
     text-decoration: none;
     display: block;
-    background-color: white;
+    background-color: $color1;
     border-bottom: 1px solid rgb(175, 186, 192);
 }
 
@@ -92,114 +100,90 @@ body {
     display: block;
 }
 
-.middle{
-	padding-top:20%;
-	border-bottom:1px solid #fff;
-	li{
-		border-right:none;
-		border-radius:none;
-	}
-	span{
-		display:inline-block;
-		vertical-align:middle;
-	}
+.middle {
+    padding-top: 20%;
+    border-bottom: 1px solid #fff;
+    li {
+        border-right: none;
+        border-radius: none;
+    }
+    span {
+        display: inline-block;
+        vertical-align: middle;
+    }
 }
 
-.middlespan1{
-	margin-right:1%;
-	width:24px;
-	height:24px;
-	background: url(../img/TASK6-2.png);
-	background-position: 0 -65px;
+.middlespan1 {
+    @include imgstyle(0, -65px, 24px, 24px);
+    margin-right: 1%;
 }
 
-.middlespancolor{
-	color: rgb(175, 186, 192);
+.middlespancolor {
+    color: rgb(175, 186, 192);
 }
 
-.middlediv{
-	color: rgb(51, 51, 51);
-	margin:1% auto;
+.middlediv {
+    color: rgb(51, 51, 51);
+    margin: 1% auto;
+}
 
+.middlespan2 {
+    @include imgstyle(0, -125px, 19px, 33px);
+}
+
+.middlered {
+    color: red;
+}
+
+.middlespan3 {
+    @include imgstyle(0, -95px, 19px, 23px);
+    margin-right: 1%;
+}
+
+.bottom {
+    @include topbottomstyle;
+    bottom: 0;
+    background-color: $color1;
+    text-align: center;
+    span {
+        display: inline-block;
+    }
+    div {
+        display: inline-block;
+        vertical-align: middle;
+    }
 
 }
 
-.middlespan2{
-	width:19px;
-	height:33px;
-	background: url(../img/TASK6-2.png);
-	background-position: 0 -125px;
-
+.bottomdiv1 {
+    text-align: center;
 }
 
-.middlered{
-	color: red;
-
-
+.bottomdiv1span1 {
+    @include imgstyle(0, -200px, 46px, 40px);
 }
 
-.middlespan3{
-	margin-right: 1%;
-	background: url(../img/TASK6-2.png);
-	background-position: 0 -95px;
-	width:19px;
-	height:23px;
-}
-.bottom{
-	position:fixed;
-	bottom:0;
-	width:100%;
-	z-index:999;
-	background-color:white;
-	text-align:center;
-	div{
-		display: inline-block;
-		vertical-align: middle;
-	}
-	span{
-		display: inline-block;
-	}
-}
-.bottomdiv1{
-	text-align: center;
+.bottomdiv1span2 {
+    color: rgb(95, 192, 205);
 }
 
-.bottomdiv1span1{
-	width: 46px;
-	height: 40px;
-	background:url(../img/TASK6-2.png);
-	background-position: 0 -200px;
-}
-
-.bottomdiv1span2{
-	color: rgb(95, 192, 205);
-}
-
-.bottomdiv2{
-	margin:0 15%;
-	span{
-	width: 94px;
-	height: 95px;
-	background:url(../img/TASK6-2.png);
-	background-position: 0 -243px;
-	}
+.bottomdiv2 {
+    margin: 0 15%;
+    span {
+        @include imgstyle(0, -243px, 94px, 95px);
+    }
 }
 
 
 
-.bottomdiv3{
-	text-align: center;
+.bottomdiv3 {
+    @extend .bottomdiv1;
 }
 
-.bottomdiv3span1{
-
-	width: 42px;
-	height: 41px;
-	background:url(../img/TASK6-2.png);
-	background-position: 0 -159px;
+.bottomdiv3span1 {
+    @include imgstyle(0, -159px, 42px, 41px);
 }
 
-.bottomdiv3span2{
-	color: rgb(200, 201, 202);
+.bottomdiv3span2 {
+    color: rgb(200, 201, 202);
 }
-

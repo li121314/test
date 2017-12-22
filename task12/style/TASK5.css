@@ -1,0 +1,164 @@
+*{
+	margin:0 auto; 
+	padding: 0;
+	font-size:62.5%;
+	font-family: 微软雅黑;
+	max-width: 640px;
+
+
+}
+body{
+	width:100%;
+	max-width: 640px;
+	margin:0 auto;
+}
+.nav{
+	width:98%;
+	text-align: center;
+	overflow: hidden;
+	padding:1% 1%; 
+	background-color: #5fc0cd;
+}
+.nav span{
+	display: inline-block; 
+	vertical-align: middle;
+	color: white;
+	font-size: 2rem;	
+	
+}
+
+.nav img{
+	display: inline-block;
+	vertical-align:middle;
+	float: left;
+	width:1.2rem;
+}
+
+
+
+.top{
+	width: 90%; 
+	background:url(../img/TASK5TOPBACKIMG.png);
+	background-size:cover; 
+	overflow: hidden;
+	padding:5% 5%;
+}
+.top img{
+	width:8rem;
+	margin-right: 1%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.top ul{
+	display: inline-block;
+	vertical-align: middle;
+	color:white;
+	list-style:none;
+
+}
+
+.s1{
+	font-size: 3rem;
+	vertical-align: middle;
+
+}
+
+.s2{
+	font-size: 2rem;
+	vertical-align: middle;
+	margin-left: 1rem;
+}
+
+.l1{
+	margin-top: 1rem;
+}
+
+.l1 img{
+	width:1em;
+	vertical-align: middle;
+
+
+}
+
+.s3{
+	font-size: 1rem;
+	vertical-align: middle;
+}
+
+.middle{
+	width:96%;
+	padding:1% 2%; 
+	border-bottom: 1px solid #e1e5e7;
+}
+
+.middle span{
+	padding-left: 1rem; 
+	font-size: 2rem;
+	border-left: 2px solid #5fc0cd;
+}
+
+.middleul{
+	font-size:4rem;
+	margin:auto 5%;
+	list-style:none;	
+}
+
+.middleul img{
+	width: 1.5rem;
+}
+.middleul li{
+	border-bottom:1px solid #e1e5e7;
+	padding-bottom:0.5rem;
+}
+
+.middlespan1{
+	color:#999999;
+	border-right: 1px solid #e1e5e7;
+	padding-right:1rem;
+}
+.middlespan2{
+	padding-left:0.5rem;
+}
+.middlespan3{
+	border-right: 1px solid #e1e5e7;
+	padding-right:1rem;
+}
+
+.spanred{
+	color:red;
+}
+
+.spanbottom{
+	display:inline-block;
+	vertical-align: middle;
+	width:35%;
+	font-size:0.5rem;
+}
+.bottom{
+	margin-top:20%;
+}
+
+.bu1{
+	padding:3% 2%;
+	margin: 1% 4%;
+	width: 40%;
+	border-radius:10px;
+	border: 1px solid #5fc0cd;
+	font-size: 5em;
+	text-align: center;
+	color: #5fc0cd;
+	background: white;
+}
+
+.bu2{
+	 padding: 3% 2%;
+	 margin: 1% 4%;
+	 width: 40%;
+	 border-radius:10px;
+	 border: 1px solid #5fc0cd;
+	 font-size: 5em;
+	 text-align: center;
+	 color: white;
+	 background: #5fc0cd;
+}
