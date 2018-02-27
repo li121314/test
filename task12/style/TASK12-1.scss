@@ -1,5 +1,6 @@
 body {
     margin: 0 auto;
+    min-width:700px;
 }
 
 @mixin imgstyle($x, $y, $width, $height) {
@@ -23,9 +24,9 @@ $color1:white;
 
 .top1 {
     background-color:rgb(95, 192, 205);
-    overflow: hidden;
-    text-align: center;
-    padding: 1rem 1rem;
+    height:70px;
+    overflow:hidden;
+    padding:10px 30px 10px 30px;
 
     a {
         color: rgb(95, 192, 205);
@@ -37,10 +38,41 @@ $color1:white;
         font-size: 2rem;
         padding: 1rem;
     }
-    span {
+
+}
+
+.top1middle{
+    width: 100%;
+    text-align:center;
+    position: relative;
+    float: left;
+    min-height: 70px;
+
+}
+
+.top1left{
+    margin-left: -100%;
+    left: -30px;
+    width: 30px;
+    float:left;
+    position: relative;
+    min-height: 70px;
+
+}
+
+.top1right{
+    margin-left:-30px;
+    width: 30px;
+    position: relative;
+    float: left;
+    min-height: 70px;
+
+}
+
+.top1right span{
         @include imgstyle(0, 0, 42px, 44px);
-        float: right;
-    }
+        display:inline-block;
+
 }
 
 .top1bu1 {
@@ -65,6 +97,12 @@ $color1:white;
     display: inline-block;
     width: 32%;
     text-align: center;
+}
+
+.dropdown button{
+    background-color:white;
+    border:none;
+    outline:0 none !important;
 }
 
 .triangle {
@@ -96,7 +134,7 @@ $color1:white;
     border-bottom: 1px solid rgb(175, 186, 192);
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:active .dropdown-content {
     display: block;
 }
 
