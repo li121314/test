@@ -1,8 +1,6 @@
 body {
     max-width: 640px;
-
     width: 100%;
-
     margin: 0 auto;
 }
 
@@ -15,16 +13,19 @@ body {
 
 .nav {
     position: fixed;
-    width: 100%;
-    background-color: #29bde0;
     z-index: 1;
+    width: 100%;
     max-width: 640px;
+    background-color: #29bde0;
+
+
 }
 
-.navtop {
+.navhead {
+    padding: 1% 1%;
     background-color: #29bde0;
     text-align: center;
-    padding: 1% 1%;
+
 }
 
 .navleftimg {
@@ -33,7 +34,7 @@ body {
     float: left;
 }
 
-.navtopword {
+.navheadword {
     color: white;
     font-size: 30px;
 }
@@ -45,47 +46,57 @@ body {
 }
 
 .navmiddle {
+    padding: 1% 1%;
     background-color: #b9e9f5;
     overflow: hidden;
-    padding: 1% 1%;
+
     button {
         @include imgstyle(0, -76px, 52px, 52px);
         float: right;
+        display: inline-block;
+        background-color: #b9e9f5;
         vertical-align: middle;
         border: none;
-        background-color: #b9e9f5;
-        display: inline-block;
+
+
     }
 }
 
 .navmiddleword {
-    vertical-align: middle;
-    font-size: 3rem;
     padding-left: 5%;
+
+    font-size: 3rem;
+    vertical-align: middle;
+
 }
 
 .triangle {
-    margin-left: 10%;
+
     width: 0;
     height: 0;
+     margin-left: 10%;
     border-color: #b9e9f5 transparent transparent transparent;
     border-width: 0.5rem;
     border-style: solid;
 }
 
 .navbottom {
-    background-color: #29bde0;
-    color: white;
-    font-size: 2rem;
     padding-left: 10%;
+    font-size: 2rem;
+    color: white;
+    background-color: #29bde0;
+
+
+
 }
 
 .click {
     width: 136px;
     height: 136px;
     padding: 0;
-    text-align: center;
     margin: 0 5%;
+    text-align: center;
+
 }
 
 .pi {
@@ -94,38 +105,40 @@ body {
 }
 
 .pi div {
+    position: relative;
     display: inline-block;
     width: 28px;
     height: 28px;
     background-color: white;
-    position: relative;
+
 }
 
 .pi p {
     width: 50%;
     height: 50%;
-    overflow: auto;
-    margin: auto;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
+    overflow: auto;
+    margin: auto;
+
 }
 
-.piimg1{
+.piimg1 {
     @include imgstyle(0, -128px, 27px, 17px);
 }
 
-.piimg2{
+.piimg2 {
     @include imgstyle(0, -145px, 18px, 20px);
 }
 
-.piimg3{
+.piimg3 {
     @include imgstyle(0, -165px, 26px, 25px);
 }
 
-.piimg4{
+.piimg4 {
     @include imgstyle(0, -190px, 14px, 14px);
 }
 
@@ -133,54 +146,59 @@ body {
     display: block;
 }
 
-.middletop{
+.middletop {
     padding-top: 200px;
-    background-color:#29bde0;
+    background-color: #29bde0;
 }
 
-.middle{
-    background-color:#29bde0;
+.middle {
+    background-color: #29bde0;
 }
+
 .middlediv {
-    border: 5px solid white;
-    background-color: #f5c97b;
     width: 17vh;
     height: 15vh;
     margin: 0 auto;
     position: relative;
+    border: 5px solid white;
+    background-color: #f5c97b;
+
 }
 
 .middledivspan1 {
     display: inline-block;
+    margin-top: 20%;
     color: #71685b;
     font-size: 4vh;
-    margin-top: 20%;
+
 }
 
 .middledivspan2 {
     display: block;
-    color: black;
-    background-color: #83b09a;
-    color: white;
     position: absolute;
     bottom: 0;
     width: 100%;
+    background-color: #83b09a;
+    color: white;
+
 }
 
-.bottom{
+.bottom {
     padding-bottom: 200px;
-    background-color:#29bde0;
+    background-color: #29bde0;
 }
 
-.bottomdiv{
+.bottomdiv {
     max-width: 640px;
     width: 100%;
     position: fixed;
     bottom: 0;
-    background-color: #29bde0;
     text-align: center;
+    background-color: #29bde0;
+
 }
-.bottombutton{
+
+.bottombutton {
     border: none;
     padding: 4% 35%;
     margin: 5% auto;

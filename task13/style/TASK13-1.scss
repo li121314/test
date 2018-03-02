@@ -11,14 +11,14 @@ body {
     height: $height;
 }
 
-.backcolor {
-    background-color: #f0f0f0;
+.navbackcolor {
     width: 100%;
+    background-color: #f0f0f0;
 }
 
-.nav {
-    background-color: #29bde0;
+.navleft {
     width: 100%;
+    background-color: #29bde0;
     span {
         @include imgstyle(0, 0, 34px, 27px);
         display: inline-block;
@@ -26,82 +26,91 @@ body {
     }
 }
 
-.lastgame {
+.head {
     width: 80%;
+    margin: 1rem auto;
+    padding: 1rem 1rem;
     background-color: white;
     border: 1px solid #c9c9c9;
     text-align: center;
-    margin: 1rem auto;
-    padding: 1rem 1rem;
+
     a {
         display: inline-block;
-        vertical-align: middle;
-        color: #9a9a9a;
         font-size: 3rem;
+        color: #9a9a9a;
+        vertical-align: middle;
         text-decoration: none;
     }
     span {
         @include imgstyle(0, -27px, 24px, 40px);
+        float: right;
         display: inline-block;
         vertical-align: middle;
-        float: right;
+
     }
 }
 
 .middle {
+    position: relative;
     width: 80%;
-    background-color: white;
     margin: 0 auto;
+    background-color: white;
     text-align: center;
     border: 1px solid #c9c9c9;
-    position: relative;
+
 }
 
-.catchghost {
-    display: inline-block;
-    border-bottom: 1px solid #fdd793;
+.middlehead {
     width: 100%;
-    color: #fbb435;
+    display: inline-block;
     font-size: 30px;
+    color: #fbb435;
+    border-bottom: 1px solid #fdd793;
+
+
+
 }
 
-.buttonstyle {
-    border: none;
-    background-color: #69d1e9;
+.middlebutton {
     width: 80%;
     margin: 1rem auto;
     padding: 1rem 1rem;
+    border: none;
+    background-color: #69d1e9;
+
     span {
-        color: white;
         font-size: 2rem;
+        color: white;
+
     }
 }
 
 .player {
     width: 80%;
-    vertical-align: center;
     margin: 0 auto;
-    color: #8d8d8d;
     font-size: 2rem;
+    color: #8d8d8d;
+    vertical-align: center;
 }
 
 .footcircle {
     display: inline-block;
     width: 1rem;
     height: 1rem;
+    background-color: #f0f0f0;
     border: 1px solid white;
     border-radius: 45%;
-    background-color: #f0f0f0;
+
 
     :hover {
         background-color: #69d1e9;
     }
 }
 
-.righttriangle {
+.middlerighttriangle {
+    position: absolute;
     width: 0;
     height: 0;
-    position: absolute;
     top: 50%;
     left: 93%;
     border-top: 20px solid transparent;
