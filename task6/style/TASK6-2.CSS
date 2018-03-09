@@ -1,124 +1,166 @@
-.header{
-	width:100%;background-color: rgb(95,192,201);
-	text-align: center;
-	overflow: hidden;
-	padding:1% 1%;
+
+html{
+	font-size:625%;
 }
 
-.headerspan1{
-	float:left;
-	width:21px;
-	height:35px;
+.head{
+	position:relative;
+	padding:.1rem 0;
+	text-align:center;
+	background-color: rgb(95,192,201);
+}
+
+.head-right{
+	position:absolute;
+	left:.1rem;
+	width:.21rem;
+	height:.35rem;
 	background: url(../img/TASK6-1.png);
+	background-size:1.69rem 2.53rem;
 	background-position: 0 0;
 }
 
-.headerspan2{
+.head-home{
+	font-size: .25rem;
 	color:white;
-	font-size: 2.5rem;
+
 }
 
-.nav{
+.self{
+	padding:.1rem .1rem;
 	background-image: url(../img/TASK6-1background.png);
 	background-size:cover;
-	background-repeat: no-repeat; 
-	width: 100%;
-	overflow: hidden;
-	padding:1% 1%;
 }
 
-.navpicture{
+.self-photo{
 	display: inline-block;
-	vertical-align: middle; 
-	width:170px;
-	height:170px;
+	width:1.69rem;
+	height:1.69rem;
+	vertical-align: middle;
 	background: url(../img/TASK6-1.png);
-	background-position: 0 -35px;
+	background-position: 0 -.35rem;
+	background-size:1.69rem 2.53rem;
 }
 
-.navlist{
+.self-list{
 	display: inline-block;
 	vertical-align: middle;
-	list-style: none;
-	display: inline-block;
 	color:white;
+	list-style: none;
 }
 
-.navlistpicture{
+.self-name{
+	font-size:.3rem;
+}
+
+.self-age{
+	font-size:.2rem;
+}
+
+.self-place-img{
 	display: inline-block;
+	width:.18rem;
+	height:.24rem;
 	vertical-align: middle;
-	width:18px;
-	height:24px;
 	background: url(../img/TASK6-1.png);
-	background-position: 0 -207px;
+	background-position: 0 -2.07rem;
+	background-size:1.69rem 2.53rem;
 }
 
-.navlistword{
+.self-place{
 	display: inline-block;
 	vertical-align: middle;
-	font-size: 1.5rem;
+	font-size:.15rem;
+}
+
+.skill{
+	display:block;
+	margin:.1rem .2rem;
+	padding-left:.1rem;
+	font-size:.15rem;
+	border-left: .015rem solid rgb(95,192,201);
 }
 
 .middle{
-	width:100%;
-	padding: 1% 1%;
-}
-
-.middleword{
-	border-left: 2px solid rgb(95,192,201);
-	padding-left: 1%;
-	font-size: 2rem;
-}
-
-.middlelist{
+	font-size:.15rem;
 	list-style: none;
-	border-top: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
+	border-top: .01rem solid #ccc;
+	border-bottom: .01rem solid #ccc;
 }
 
-.mll1{
-	padding:1% 0 1% 0;
-}
 
-.mll1s1{
-	display: inline-block;
+
+
+.middle span{
+	display:inline-block;
 	vertical-align: middle;
-	width:24px;
-	height:24px;
+}
+
+.middle-li1{
+	padding:.1rem .1rem;
+}
+
+.middle-li{
+	padding:.1rem .1rem;
+	border-top:.01rem solid #ccc;
+}
+
+.middle-list1-border{
+	border-right:.01rem solid #ccc;
+}
+
+.middle-list-right{
+	padding-right: .1rem;
+}
+
+.middle-list-left{
+	margin-left: .1rem;
+}
+
+.middle-list1-img{
+	display: inline-block;
+	width:.24rem;
+	height:.24rem;
+	vertical-align: middle;
 	background: url(../img/TASK6-1.png);
-	background-position: 0 -230px;
+	background-position: 0 -2.3rem;
+	background-size:1.69rem 2.53rem;
 }
-
-.mll1s2{
-	font-size: 2.5rem;
-	display: inline-block;
-	vertical-align: middle;
+.middle-list2-word{
+	color: #ccc;
 	border-right: 1px solid #ccc;
-	margin-right: 2%;
-	padding-right: 2%;
 }
 
-.mll1s3{
-	font-size: 2.5rem;
-	display: inline-block;
-	vertical-align: middle;
+.middle-red{
+	color:red;
 }
 
-.mll2{
-	border-top: 1px solid #ccc;
-	padding:1% 0 1% 0;
+.middle-selfintroduce{
+	display:inline-block;
+	width:50%;
+	font-size:.12rem;
+	word-wrap:break-word;
 }
 
-.footer{
+
+.bottom{
 	text-align: center;
 }
-
-.footer button{
-	padding:3% 2%;
-	margin: 1% 4%;
-	width: 40%;
-	border-radius:10px;
-	border: 1px solid #5fc0cd;
-	font-size: 5em;
+.bottom button{
+	margin:.1rem .1rem;
+	padding:.1rem 0;
+	width:2rem;
+	font-size:.15rem;
 	text-align: center;
+	border-radius:.1rem;
+	border:.01rem solid #5fc0cd;
+
+}
+.bottom-message{
+	color: #5fc0cd;
+	background: white;
+}
+.bottom-call{
+	color: white;
+	background: #5fc0cd;
 }

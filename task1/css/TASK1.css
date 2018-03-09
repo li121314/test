@@ -1,13 +1,10 @@
-div{                                                       
-	width:50%;
-    margin:auto;	 
-}
-
 .box{
-	background: orange;
+	float: left;
+	padding-bottom: 30%;/*设置正方形的高度*/
+  	margin: 1.5%;/*正方形之间隔开距离*/
   	width: 30%;
-  	padding-bottom: 30%;/*这一段用来设置正方形的宽度*/
-  	float: left;
-  	margin: 1%;
-	border-radius:10%;
+	background: orange;
+
+
+	border-radius:5%;
 }

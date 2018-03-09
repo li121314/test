@@ -1,93 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
-*{
-	margin:0;
-	padding:0;
-	font-family:微软雅黑;
+body {
+    font-size: 62.5%
+
+}
+
+.nav {
+    padding:1% 1%;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    overflow: hidden;
+    background-color: #5fc0cd;
+    color: white;
+}
+
+.navc-lose {
+    float: left;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
 }
 
 
 
-body{
-	font-size:62.5%
+
+.nav-login {
+    display: inline-block;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
 }
 
-.nav{
-	width:100%;
-	height: 4em;
-	background-color:#5fc0cd;
-	color:white;
-	overflow:hidden;
-	text-align: center;
 
-}
-.nav1{
-	float:left;height: 4em;line-height: 4em;
-}
-.nav2{
-	float: left;margin-left: 1em; font-size: 2em;
-}
-.nav3{
-	display: inline-block;height: 4em;line-height: 4em;
-}
-.nav3 p{
-	font-size: 2.5em;
+
+.nav-register {
+    float: right;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
 }
 
-.nav4{
-	float:right;height: 4em;line-height: 4em;
-}
-.nav4 p{
-	float: right;margin-right: 1em; font-size: 2em;
+
+ul {
+    padding:1rem 0;
+    list-style: none;
+    background-color: #eff0f4;
 }
 
-ul{
-	list-style:none; 
-	padding-top:1em;
-	padding-bottom: 3em;
-	background-color: #eff0f4;
+li {
+    margin-top: 1rem;
+    padding:1rem 0;
+    background: white;
+}
+
+img {
+    padding:0 0.5rem;
+    width:1rem;
+    vertical-align: middle;
 
 }
 
-li{
-	background:white; 
-	margin-top: 1em;
-
-
+input {
+    padding:0 0.5rem;
+    font-size: 1rem;
+    color: black;
+    vertical-align: middle;
+    border: none;
+    border-left: 0.1rem solid #eff0f4;
 }
 
-img{
-	margin-right:1em;
-	margin-left:1em;
-	vertical-align:middle;
-	width:2em;
-
-	
+.bottom-login {
+    width:100%;
+    padding:0.5rem 0;
+    font-size: 1.2rem;
+    color: white;
+    border: none;
+    background-color: #5fc0cd;
 }
 
-input{
-	padding-left:1em;
- 	vertical-align:middle;
-	border:none;
-	border-left:1px solid #eff0f4; 
-	font-size:2em;
-	color:#eff0f4;
-	
+.lostpassword {
+    float: right;
+    padding-right:1rem;
+    color: #5fc0cd;
+    font-size: 1rem;
 
-}
-
-.bu{
-	width:100%;
-	border:none;
-	background-color:#5fc0cd;
-	font-size:2em;
-	color:white;
-	padding-top:1em;
-	padding-bottom: 1em;
-}
-
-.bo{
-	float:right;
-	margin-right: 1em; 
-	color:#5fc0cd;
-	font-size: 1.5em;
 }

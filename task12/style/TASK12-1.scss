@@ -1,8 +1,9 @@
 @mixin imgstyle($x, $y, $width, $height) {
-    background: url(../img/TASK6-2.png);
-    background-position: $x $y;
     width: $width;
     height: $height;
+    background: url(../img/TASK6-2.png);
+    background-position: $x $y;
+    background-size: .94rem 3.37rem;
 }
 
 @mixin topbottomstyle {
@@ -13,128 +14,100 @@
 
 $color1:white;
 
-body {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+* {
+    padding: 0;
+    margin: 0;
 }
 
-.topnav {
+html {
+    font-size: 625%;
+}
+
+.head {
     @include topbottomstyle;
     top: 0;
 }
 
-.top1 {
+.head-top {
+    position: relative;
+    padding: .1rem .1rem;
+    text-align: center;
     background-color: rgb(95, 192, 205);
-    height: 70px;
-    overflow: hidden;
-    padding: 10px 30px 10px 30px;
+}
 
-
-
+.top-middle {
+    display: inline-block;
     button {
         border: none;
-        border-radius: 0.5rem;
-        font-size: 2rem;
-        padding: 1rem;
+        border-radius: .05rem;
+        font-size: .2rem;
+        padding: .1rem;
     }
 }
 
-.top1middle {
-    width: 100%;
-    text-align: center;
-    position: relative;
-    float: left;
-    min-height: 70px;
+.top-right {
+    @include imgstyle(0, 0, .42rem, .44rem);
+    position: absolute;
+    right: .1rem;
 }
 
-.top1left {
-    margin-left: -100%;
-    left: -30px;
-    width: 30px;
-    float: left;
-    position: relative;
-    min-height: 70px;
-}
-
-.top1right {
-    margin-left: -30px;
-    width: 30px;
-    position: relative;
-    float: left;
-    min-height: 70px;
-}
-
-.top1right span {
-    @include imgstyle(0, 0, 42px, 44px);
-    display: inline-block;
-}
-
-.top1bu1 {
+.top-findemploy {
     color: $color1;
     background-color: rgb(85, 168, 179);
 }
 
-.top1bu2 {
-    margin-left: -1rem;
+.top-findcarework {
+    margin-left: -.1rem;
     color: rgb(95, 192, 205);
     background-color: $color1;
 }
 
-.top2 {
+.head-list {
     background-color: $color1;
-    border-bottom: 1px solid rgb(175, 186, 192);
-    font-size: 2rem;
-    display: block;
-    word-break: keep-all;
-    white-space: nowrap;
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
-    width: 32%;
+    margin: .1rem auto;
+    width: 33%;
     text-align: center;
+    border-right: .01rem solid rgb(175, 186, 192);
 }
 
 .dropdown button {
+    font-size: .2rem;
+    color: #afbac0;
     background-color: white;
     border: none;
     outline: 0 none !important;
 }
 
 .triangle {
-    @include imgstyle(0, -54px, 13px, 8px);
+    @include imgstyle(0, -.54rem, .13rem, .08rem);
     display: inline-block;
-    margin-left: 1rem;
-}
-
-.dropbtn {
-    color: #afbac0;
-    border-right: 1px solid rgb(175, 186, 192);
-    margin: 5% auto;
-    padding: 5% auto;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
     width: 100%;
-    border: 1px solid rgb(175, 186, 192);
+    border: .01rem solid #ccc;
     background-color: white;
     ul {
-        list-style: none;
+        font-size: .2rem;
         text-align: center;
-        padding: 0
+        list-style: none;
+    }
+    a {
+        display: block;
+        color: rgb(175, 186, 192);
+        text-decoration: none;
+        background-color: $color1;
     }
 }
 
-.dropdown-content a {
-    color: rgb(175, 186, 192);
-    text-decoration: none;
-    display: block;
-    background-color: $color1;
-}
+
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -146,8 +119,8 @@ body {
 
 
 .middle {
-    padding-top: 20%;
-    border-bottom: 1px solid #fff;
+    padding-top: 2rem;
+    border-bottom: .01rem solid #fff;
     li {
         border-right: none;
         border-radius: none;
@@ -159,8 +132,8 @@ body {
 }
 
 .middlespan1 {
-    @include imgstyle(0, -65px, 24px, 24px);
-    margin-right: 1%;
+    @include imgstyle(0, -.65rem, .24rem, .24rem);
+    margin-right: .1rem;
 }
 
 .middlespancolor {
@@ -169,11 +142,11 @@ body {
 
 .middlediv {
     color: rgb(51, 51, 51);
-    margin: 1% auto;
+    margin: .1rem auto;
 }
 
 .middlespan2 {
-    @include imgstyle(0, -125px, 19px, 33px);
+    @include imgstyle(0, -1.25rem, .19rem, .33rem);
 }
 
 .middlered {
@@ -181,8 +154,8 @@ body {
 }
 
 .middlespan3 {
-    @include imgstyle(0, -95px, 19px, 23px);
-    margin-right: 1%;
+    @include imgstyle(0, -.95rem, .19rem, .23rem);
+    margin-right: .1rem;
 }
 
 .bottom {
@@ -208,7 +181,7 @@ body {
 }
 
 .bottomdiv1span1 {
-    @include imgstyle(0, -200px, 46px, 40px);
+    @include imgstyle(0, -2rem, .46rem, .4rem);
 }
 
 .bottomdiv1span2 {
@@ -216,9 +189,9 @@ body {
 }
 
 .bottomdiv2 {
-    margin: 0 15%;
+    margin: 0 1.5rem;
     span {
-        @include imgstyle(0, -243px, 94px, 95px);
+        @include imgstyle(0, -2.43rem, .94rem, .95rem);
     }
 }
 
@@ -229,7 +202,7 @@ body {
 }
 
 .bottomdiv3span1 {
-    @include imgstyle(0, -159px, 42px, 41px);
+    @include imgstyle(0, -1.59rem, .42rem, .41rem);
 }
 
 .bottomdiv3span2 {

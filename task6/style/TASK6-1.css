@@ -1,242 +1,276 @@
-body{
-	font-size: 62.5%;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.top{
-	border:none;
-	background: rgb(95, 192, 205);
-	width: 100%;
+html {
+    font-size: 625%;
 }
 
-.topd1{
-	margin:0 auto;
-	text-align: center;
-	display: inline-block;
-	padding:1.5% 0;
-	width: 88%;
+body {
+    margin: 1.5rem 0 1.5rem 0;
 }
 
-.topd1bu1{
-	margin-left: 15%;
-	color:white;
-	background: rgb(85, 168, 179);
-	width:20%;font-size: 2rem;
-	border-radius: 0.5rem;
-	padding:2%;
-	border:none;
+.nav {
+    background-color: white;
 }
 
-.topd1bu2{
-	margin-left: -3%;
-	color:rgb(95, 192, 205);
-	background: white;width: 20%;
-	font-size: 2rem;
-	border-radius: 0.5rem;
-	padding:2%;
-	border:none;
-}
-
-.topd3bu1{
-	width:33%;
-	border:none;
-	float: left;
-	background: white;
-	padding: 1%; 
-	color: rgb(175, 186, 192);
-	font-size:2rem;
-	border-bottom: 1px solid rgb(175, 186, 192);
-}
-
-.topd3span{
-	display: inline-block;
-	width:13px;
-	height:9px;
-	background: url(../img/TASK6-2.png);
-	background-position: 0-53px;
-}
-
-.topd3bu2{
-	width:34%;
-	float: left;
-	border:none;
-	border-right:1px solid rgb(175, 186, 192);
-	border-left:1px solid rgb(175, 186, 192);
-	border-bottom: 1px solid rgb(175, 186, 192);
-	background: white;
-	padding: 1%; 
-	color: rgb(175, 186, 192);
-	font-size:2rem;
-	
-}
-
-.topd3bu3{
-	width:33%;
-	border:none;
-	float: left;
-	background: white;
-	padding: 1%; 
-	color: rgb(175, 186, 192);
-	font-size:2rem;
-	border-bottom: 1px solid rgb(175, 186, 192)
-}
-
-.middlespan1{
-	display:inline-block;
-	vertical-align:middle;
-	margin-right:1%;
-	width:24px;
-	height:24px;
-	background: url(../img/TASK6-2.png);
-	background-position: 0 -65px;
-
-}
-
-.middlespancolor{
-	color: rgb(175, 186, 192);
-	display:inline-block;
-	vertical-align:middle;
-	
-}
-
-.middlediv{
-	color: rgb(51, 51, 51);
-	margin:1% auto;
-	
-
-}
-
-.middlespan2{
-	display:inline-block;
-	vertical-align:middle;
-	width:19px;
-	height:33px;
-	background: url(../img/TASK6-2.png);
-	background-position: 0 -125px;
-	
-}
-
-.middlered{
-	color: red;
-
-
-}
-
-.middlespan3{
-	display:inline-block;
-	vertical-align:middle;
-	margin-right: 1%; 
-	background: url(../img/TASK6-2.png);
-	background-position: 0 -95px;
-	width:19px;
-	height:23px;
-}
-
-.bottom{
-	width: 100%; 
-	background-color: rgb(248, 250, 251);
-	text-align: center;
-	padding:2%;
-
-}
-
-.bottomdiv1{
-	display: inline-block; 
-	text-align: center;
-	vertical-align: middle;
-}
-
-.bottomdiv1span1{
-	display: inline-block; 
-	width: 46px; 
-	height: 40px;
-	background:url(../img/TASK6-2.png);
-	background-position: 0 -200px;
-}
-
-.bottomdiv1span2{
-	color: rgb(95, 192, 205);
-}
-
-.bottomdiv2{
-	display: inline-block;
-	vertical-align: middle;
-	margin:0 15%;
-}
-
-.bottomdiv2 span{
-	display: inline-block; 
-	width: 94px; 
-	height: 95px;
-	background:url(../img/TASK6-2.png);
-	background-position: 0 -243px;
-}
-
-.bottomdiv3{
-	display: inline-block;
-	text-align: center;
-	vertical-align: middle;
-}
-
-.bottomdiv3span1{
-	display: inline-block;
-	width: 42px;
-	height: 41px;
-	background:url(../img/TASK6-2.png);
-	background-position: 0 -159px;
-}
-
-.bottomdiv3span2{
-	color: rgb(200, 201, 202);
-}
-
-/* 容器 <div> - 需要定位下拉内容 */
-.dropdown {
+.nav-head {
     position: relative;
-    display: inline-block;
-    width: 32%;
+    width: 100%;
+    padding: .2rem .1rem;
+    background-color: #5fc0cd;
     text-align: center;
 }
 
-/* 下拉内容 (默认隐藏) */
+.nav-head button {
+    padding: 1% 2%;
+    font-size: .2rem;
+    vertical-align: middle;
+    border: none;
+    border-radius: .05rem;
+}
+
+
+
+.nav-findemploy {
+    color: white;
+    background-color: #55a8b3;
+    margin-right: -2%;
+}
+
+.nav-findcarework {
+    color: #5fc0cd;
+    background-color: white;
+}
+
+.nav-head-right {
+    position: absolute;
+    right: .1rem;
+    width: .42rem;
+    height: .44rem;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../img/TASK6-2.png);
+    background-size: .94rem 3.37rem;
+    background-position: 0 0;
+}
+
+
+
+
+
+/*background-size，雪碧图自适应的关键属性*/
+
+.dropbtn {
+    position: relative;
+    display: inline-block;
+    margin-top: .1rem;
+    width: 32%;
+    font-size: .15rem;
+    text-align: center;
+    background-color: white;
+    color: #afbac0;
+    border-right: .01rem solid #ccc;
+}
+
+.dropbtn button {
+    background-color: white;
+    border: none;
+}
+
+
+
+
+
+/*下拉按钮*/
+
+.triangle {
+    display: inline-block;
+    width: .13rem;
+    height: .08rem;
+    background: url(../img/TASK6-2.png);
+    background-size: .94rem 3.37rem;
+    background-position: 0 -0.53rem;
+}
+
+
+
+
+
+/*三角图标*/
+
 .dropdown-content {
     display: none;
     position: absolute;
-    width:100%;
+    width: 100%;
     text-align: center;
-    border:1px solid rgb(175, 186, 192);
+    border: 1px solid rgb(175, 186, 192);
+    list-style: none;
 }
-/* 下拉菜单的链接 */
+
+
+
+
+
+/* 下拉内容 (默认隐藏) */
+
 .dropdown-content a {
-    color:rgb(175, 186, 192);
+    color: rgb(175, 186, 192);
     text-decoration: none;
     display: block;
     background-color: white;
-    border-bottom:1px solid rgb(175, 186, 192);
+    border-bottom: 1px solid rgb(175, 186, 192);
 }
 
 
-/* 在鼠标移上去后显示下拉菜单 */
-.dropdown:hover .dropdown-content {
+
+
+
+
+/* 下拉菜单的链接 */
+
+.dropbtn:hover .dropdown-content {
     display: block;
 }
 
-.triangle{
-    display:inline-block;
-    width:13px;
-    height:8px;
+
+
+
+/* 在鼠标移上去后显示下拉菜单 */
+
+.dropdown-content li:hover a {
+    color: #ffffff;
+    background-color: #ccc
+}
+
+
+
+
+/*鼠标触碰到li，a标签样式改变*/
+
+.middle {
+    margin: 0;
+    v padding: 0;
+    list-style: none;
+    border-top: .01rem solid #ccc;
+}
+
+.middle-service-img {
+    display: inline-block;
+    width: .24rem;
+    height: .24rem;
+    vertical-align: middle;
     background: url(../img/TASK6-2.png);
-    background-position: 0 -54px;
-
-}
-.dropbtn{
-    color:#afbac0;
-    border-right: 1px solid rgb(175, 186, 192);
-    margin:5% auto;
-    padding:5% auto;
+    background-size: .94rem 3.37rem;
+    background-position: 0 -.65rem;
 }
 
-.topd2{
-	background-color:white;
-	border-bottom:1px solid rgb(175, 186, 192);
-	font-size: 2rem;
+.middle-survicedata {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: .2rem;
+    color: rgb(175, 186, 192);
+}
+
+.middle-data {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: .15rem;
+}
+
+.middle-right {
+    float: right;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.red {
+    display: inline-block;
+    vertical-align: middle;
+    color: red;
+    font-size: .15rem;
+}
+
+.middle-right-img {
+    display: inline-block;
+    vertical-align: middle;
+    width: .19rem;
+    height: .33rem;
+    background: url(../img/TASK6-2.png);
+    background-size: .94rem 3.37rem;
+    background-position: 0 -1.25rem;
+}
+
+.middle-place-img {
+    display: inline-block;
+    width: .19rem;
+    height: .23rem;
+    vertical-align: middle;
+    background: url(../img/TASK6-2.png);
+    background-position: 0 -.95rem;
+    background-size: .94rem 3.37rem;
+}
+
+.middle-borderbottom {
+    border-bottom: .01rem solid #ccc;
+}
+
+.bottom {
+    padding: .1rem;
+    text-align: center;
+    background-color: white;
+}
+
+.bottom-list {
+
+    list-style: none;
+}
+
+.bottom-list li {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.bottom-list li a {
+    text-decoration: none;
+    color: none;
+}
+
+.bottom-home-img {
+    display: inline-block;
+    width: .46rem;
+    height: .40rem;
+    background: url(../img/TASK6-2.png);
+    background-position: 0 -2rem;
+    background-size: .94rem 3.37rem;
+}
+
+.bottom-home {
+    color: rgb(95, 192, 205);
+}
+
+.bottom-middle {
+    display: inline-block;
+    margin: 0 .15rem;
+    width: .94rem;
+    height: .95rem;
+    vertical-align: middle;
+    background: url(../img/TASK6-2.png);
+    background-position: 0 -2.43rem;
+    background-size: .94rem 3.37rem;
+}
+
+.bottom-myself-img {
+    display: inline-block;
+    width: .42rem;
+    height: .41rem;
+    background: url(../img/TASK6-2.png);
+    background-position: 0 -1.59rem;
+    background-size: .94rem 3.37rem;
+}
+
+.bottom-myself {
+    color: rgb(200, 201, 202);
 }

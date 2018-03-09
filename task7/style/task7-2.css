@@ -1,73 +1,236 @@
-body{
-	max-width:640px;
-	
-	width:100%;
-
-	margin:0 auto;
-	
-	
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.click{
-	width:136px;
-	height:136px;
-	padding:0;
-	text-align:center;
-	margin:0 5%;
-
-}
-.pi{
-	display: none;
-	margin-top:21px;
-	
-
-}
-.pi div{
-	display:inline-block;
-	width:28px;
-	height:28px;
-	background-color:white;
-	position:relative;
-
-
-}
-.pi p{
-	width: 50%; 
-  	height: 50%; 
-  	overflow: auto; 
-  	margin: auto; 
-  	position: absolute; 
-  	top: 0; left: 0; bottom: 0; right: 0; 
-
-
-}
-.click:hover  .pi {
-	display:block;
+html {
+    font-size: 625%;
 }
 
-.middlediv{
-	border:5px solid white;
-	background-color:#f5c97b;
-	width: 17vh;
-	height: 15vh; 
-	margin:0 auto;
-	position:relative;
-
+body {
+    background-color: #29bde0;
 }
 
-.middledivspan1{
-	display: inline-block; 
-	color:#71685b;
-	font-size: 4vh;
-	margin-top:20%;
+.head {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background-color: #29bde0;
 }
 
-.middledivspan2{
-	display: block; 
-	color:black;
-	background-color:#83b09a;
-	color: white;
-	position:absolute;
-	bottom:0;
-	width: 100%;
+.head-top {
+    display: block;
+    padding: .1rem .1rem;
+    text-align: center;
+    background-color: #29bde0;
+}
+
+.head-top-left {
+    display: inline-block;
+    float: left;
+    width: .39rem;
+    height: .4rem;
+    background-image: url(../img/task7-2.png);
+    background-size: .52rem 2.04rem;
+    background-position: 0 0;
+}
+
+.head-top-vote {
+    display: inline-block;
+    color: white;
+    font-size: .3rem;
+}
+
+.head-top-right {
+    display: inline-block;
+    float: right;
+    width: .36rem;
+    height: .36rem;
+    background-image: url(../img/task7-2.png);
+    background-position: 0 -.4rem;
+    background-size: .52rem 2.04rem;
+}
+
+.head-middle {
+    display: block;
+    padding: .1rem .1rem;
+    background-color: #b9e9f5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.head-middle p {
+    display: inline-block;
+    padding-left: .2rem;
+    width: 50%;
+    vertical-align: middle;
+    font-size: .3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.head-middle button {
+    display: inline-block;
+    float: right;
+    width: .52rem;
+    height: .52rem;
+    vertical-align: middle;
+    background-image: url(../img/task7-2.png);
+    background-position: 0px -.76rem;
+    background-size: .52rem 2.04rem;
+    background-color: #b9e9f5;
+    border: none;
+}
+
+.head-middle-triangle {
+    display: block;
+    margin-left: 1rem;
+    width: 0;
+    height: 0;
+    border-color: #b9e9f5 transparent transparent transparent;
+    border-width: .1rem;
+    border-style: solid;
+}
+
+.head-bottom {
+    display: block;
+    padding-left: .5rem;
+    width: 50%;
+    color: white;
+    font-size: .2rem;
+    background-color: #29bde0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.middle-back {
+    margin: 2rem auto;
+    background-color: #29bde0;
+}
+
+.middle-click {
+    height: 1.5rem;
+    text-align: center;
+}
+
+
+
+.middle-square {
+    position: relative;
+    margin: 0 auto;
+    width: 1rem;
+    height: 1rem;
+    text-align: center;
+    background-color: #f5c97b;
+    border: .05rem solid white;
+}
+
+.middle-role {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+    font-size: .2rem;
+    color: #71685b;
+}
+
+.middle-number {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    color: white;
+    background-color: #83b09a;
+}
+
+
+.middle-iconlist {
+    display: none;
+    margin: .1rem auto;
+    width: 1rem;
+}
+
+.middle-iconlist div {
+    position: relative;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background-color: white;
+}
+
+.middle-iconlist p {
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.middle-icon1 {
+    width: 27px;
+    height: 17px;
+    background-image: url(../img/task7-2.png);
+    background-position: 0px -128px;
+}
+
+
+
+
+
+
+/*无法使用rem自适应，原因不明*/
+
+.middle-icon2 {
+    width: 18px;
+    height: 20px;
+    background-image: url(../img/task7-2.png);
+    background-position: 0px -145px;
+}
+
+.middle-icon3 {
+    width: 26px;
+    height: 25px;
+    background-image: url(../img/task7-2.png);
+    background-position: 0px -165px;
+}
+
+.middle-icon4 {
+    width: 14px;
+    height: 14px;
+    background-image: url(../img/task7-2.png);
+    background-position: 0px -190px;
+}
+
+
+
+.middle-click:hover .middle-iconlist {
+    display: block;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #29bde0;
+}
+
+.bottom button {
+    padding: .1rem 1rem;
+	margin:.1rem auto;
+    color: white;
+    font-size: .5rem;
+    background-color: #fbb435;
+    border: none;
+
 }

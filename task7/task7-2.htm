@@ -1,337 +1,485 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
+
 <head>
-	<meta charset="UTF-8">
-	<title>护工界面</title>
-	<link rel="stylesheet" type="text/css" href="style/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="style/task7-2.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>游戏页面</title>
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style/task7-2.css">
 </head>
+
 <body>
-<div style="position: fixed;width: 100%;background-color:#29bde0;z-index: 1;max-width:640px;">
-	<div style="background-color:#29bde0;text-align: center;padding:1% 1%;">
-		<span style="display: inline-block; background-image: url(img/task7-2.png);width:39px;height:40px;background-position: 0 0px;float:left;"></span>
-		<span style="color: white;font-size: 30px;">投票</span>
-		<span style="display: inline-block; background-image: url(img/task7-2.png);width:36px;height:36px;background-position: 0px -40px;float: right;"></span>
-	</div>
-	<div style="background-color:#b9e9f5;overflow: hidden;padding:1% 1%;">
-		<span style="vertical-align: middle;font-size: 3rem;padding-left: 5%;">发言讨论结束，大家请投票</span>
-		<audio src="task7-2.mp3" controls="controls" preload id="music" hidden></audio>
-            <button id="a" onclick="a()" style="display: inline-block; background-image: url(img/task7-2.png);width:52px;height:52px;background-position: 0px -76px;float: right;vertical-align: middle;border:none;background-color:#b9e9f5; " type="button">
+    <div class="head">
+        <span class="head-top">
+            <p class="head-top-left"></p>
+            <p class="head-top-vote">投票</p>
+            <p class="head-top-right"></p>
+        </span>
+        <span class="head-middle">
+            <p>发言讨论结束，大家请投票</p>
+            <audio src="task7-2.mp3" controls="controls" preload id="music" hidden></audio>
+            <button id="a" onclick="a()" type="button">
             </button>
             <script>
-                function a() {
-                    var audio = document.getElementById('music');
-                    if (audio.paused) {
-                        audio.play();
-                    } else {
-                        audio.pause();
-                    }
+            function a() {
+                var audio = document.getElementById('music');
+                if (audio.paused) {
+                    audio.play();
+                } else {
+                    audio.pause();
                 }
+            }
             </script>
-	</div>
-	<div style="margin-left: 10%;width: 0;height: 0;border-color: #b9e9f5 transparent transparent transparent;border-width: 0.5rem;border-style: solid;"></div>
-	
-	<div style="background-color: #29bde0;color:white;font-size: 2rem;padding-left: 10%;">
-		<span>点击得票数最多人的头像</span>
-	</div>
-</div>
-	<div style="padding-top: 200px;background-color:#29bde0;"></div>
-	<div style="background-color:#29bde0;">
-		<div class="container" style="width:100%;">
-			<div class="row">
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 click" >
-					<div class="middlediv">
-						<span class="middledivspan1">水民</span>
-						<span class="middledivspan2">1号</span>
-					</div>
-				
-					<div class="pi">
-						<div><p  style="background-image: url(img/task7-2.png);width:27px;height:17px;background-position: 0px -128px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:18px;height:20px;background-position: 0px -145px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:26px;height:25px;background-position: 0px -165px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:14px;height:14px;background-position: 0px -190px;"></p></div>
-					</div>
-				</div>
-
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 click" >
-					<div class="middlediv">
-						<span class="middledivspan1">水民</span>
-						<span class="middledivspan2">1号</span>
-					</div>
-				
-					<div class="pi">
-						<div><p  style="background-image: url(img/task7-2.png);width:27px;height:17px;background-position: 0px -128px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:18px;height:20px;background-position: 0px -145px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:26px;height:25px;background-position: 0px -165px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:14px;height:14px;background-position: 0px -190px;"></p></div>
-					</div>
-				</div>
-
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 click" >
-					<div class="middlediv">
-						<span class="middledivspan1">水民</span>
-						<span class="middledivspan2">1号</span>
-					</div>
-				
-					<div class="pi">
-						<div><p  style="background-image: url(img/task7-2.png);width:27px;height:17px;background-position: 0px -128px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:18px;height:20px;background-position: 0px -145px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:26px;height:25px;background-position: 0px -165px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:14px;height:14px;background-position: 0px -190px;"></p></div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="container" style="width:100%;margin-top:5%;">
-			<div class="row">
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 click" >
-					<div class="middlediv">
-						<span class="middledivspan1">水民</span>
-						<span class="middledivspan2">1号</span>
-					</div>
-				
-					<div class="pi">
-						<div><p  style="background-image: url(img/task7-2.png);width:27px;height:17px;background-position: 0px -128px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:18px;height:20px;background-position: 0px -145px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:26px;height:25px;background-position: 0px -165px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:14px;height:14px;background-position: 0px -190px;"></p></div>
-					</div>
-				</div>
-
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 click" >
-					<div class="middlediv">
-						<span class="middledivspan1">水民</span>
-						<span class="middledivspan2">1号</span>
-					</div>
-				
-					<div class="pi">
-						<div><p  style="background-image: url(img/task7-2.png);width:27px;height:17px;background-position: 0px -128px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:18px;height:20px;background-position: 0px -145px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:26px;height:25px;background-position: 0px -165px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:14px;height:14px;background-position: 0px -190px;"></p></div>
-					</div>
-				</div>
-
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 click" >
-					<div class="middlediv">
-						<span class="middledivspan1">水民</span>
-						<span class="middledivspan2">1号</span>
-					</div>
-				
-					<div class="pi">
-						<div><p  style="background-image: url(img/task7-2.png);width:27px;height:17px;background-position: 0px -128px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:18px;height:20px;background-position: 0px -145px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:26px;height:25px;background-position: 0px -165px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:14px;height:14px;background-position: 0px -190px;"></p></div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="container" style="width:100%;margin-top:5%;">
-			<div class="row">
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 click" >
-					<div class="middlediv">
-						<span class="middledivspan1">水民</span>
-						<span class="middledivspan2">1号</span>
-					</div>
-				
-					<div class="pi">
-						<div><p  style="background-image: url(img/task7-2.png);width:27px;height:17px;background-position: 0px -128px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:18px;height:20px;background-position: 0px -145px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:26px;height:25px;background-position: 0px -165px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:14px;height:14px;background-position: 0px -190px;"></p></div>
-					</div>
-				</div>
-
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 click" >
-					<div class="middlediv">
-						<span class="middledivspan1">水民</span>
-						<span class="middledivspan2">1号</span>
-					</div>
-				
-					<div class="pi">
-						<div><p  style="background-image: url(img/task7-2.png);width:27px;height:17px;background-position: 0px -128px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:18px;height:20px;background-position: 0px -145px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:26px;height:25px;background-position: 0px -165px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:14px;height:14px;background-position: 0px -190px;"></p></div>
-					</div>
-				</div>
-
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 click" >
-					<div class="middlediv">
-						<span class="middledivspan1">水民</span>
-						<span class="middledivspan2">1号</span>
-					</div>
-				
-					<div class="pi">
-						<div><p  style="background-image: url(img/task7-2.png);width:27px;height:17px;background-position: 0px -128px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:18px;height:20px;background-position: 0px -145px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:26px;height:25px;background-position: 0px -165px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:14px;height:14px;background-position: 0px -190px;"></p></div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="container" style="width:100%;margin-top:5%;">
-			<div class="row">
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 click" >
-					<div class="middlediv">
-						<span class="middledivspan1">水民</span>
-						<span class="middledivspan2">1号</span>
-					</div>
-				
-					<div class="pi">
-						<div><p  style="background-image: url(img/task7-2.png);width:27px;height:17px;background-position: 0px -128px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:18px;height:20px;background-position: 0px -145px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:26px;height:25px;background-position: 0px -165px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:14px;height:14px;background-position: 0px -190px;"></p></div>
-					</div>
-				</div>
-
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 click" >
-					<div class="middlediv">
-						<span class="middledivspan1">水民</span>
-						<span class="middledivspan2">1号</span>
-					</div>
-				
-					<div class="pi">
-						<div><p  style="background-image: url(img/task7-2.png);width:27px;height:17px;background-position: 0px -128px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:18px;height:20px;background-position: 0px -145px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:26px;height:25px;background-position: 0px -165px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:14px;height:14px;background-position: 0px -190px;"></p></div>
-					</div>
-				</div>
-
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 click" >
-					<div class="middlediv">
-						<span class="middledivspan1">水民</span>
-						<span class="middledivspan2">1号</span>
-					</div>
-				
-					<div class="pi">
-						<div><p  style="background-image: url(img/task7-2.png);width:27px;height:17px;background-position: 0px -128px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:18px;height:20px;background-position: 0px -145px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:26px;height:25px;background-position: 0px -165px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:14px;height:14px;background-position: 0px -190px;"></p></div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="container" style="width:100%;margin-top:5%;">
-			<div class="row">
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 click" >
-					<div class="middlediv">
-						<span class="middledivspan1">水民</span>
-						<span class="middledivspan2">1号</span>
-					</div>
-				
-					<div class="pi">
-						<div><p  style="background-image: url(img/task7-2.png);width:27px;height:17px;background-position: 0px -128px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:18px;height:20px;background-position: 0px -145px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:26px;height:25px;background-position: 0px -165px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:14px;height:14px;background-position: 0px -190px;"></p></div>
-					</div>
-				</div>
-
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 click" >
-					<div class="middlediv">
-						<span class="middledivspan1">水民</span>
-						<span class="middledivspan2">1号</span>
-					</div>
-				
-					<div class="pi">
-						<div><p  style="background-image: url(img/task7-2.png);width:27px;height:17px;background-position: 0px -128px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:18px;height:20px;background-position: 0px -145px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:26px;height:25px;background-position: 0px -165px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:14px;height:14px;background-position: 0px -190px;"></p></div>
-					</div>
-				</div>
-
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 click" >
-					<div class="middlediv">
-						<span class="middledivspan1">水民</span>
-						<span class="middledivspan2">1号</span>
-					</div>
-				
-					<div class="pi">
-						<div><p  style="background-image: url(img/task7-2.png);width:27px;height:17px;background-position: 0px -128px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:18px;height:20px;background-position: 0px -145px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:26px;height:25px;background-position: 0px -165px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:14px;height:14px;background-position: 0px -190px;"></p></div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="container" style="width:100%;margin-top:5%;">
-			<div class="row">
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 click" >
-					<div class="middlediv">
-						<span class="middledivspan1">水民</span>
-						<span class="middledivspan2">1号</span>
-					</div>
-				
-					<div class="pi">
-						<div><p  style="background-image: url(img/task7-2.png);width:27px;height:17px;background-position: 0px -128px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:18px;height:20px;background-position: 0px -145px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:26px;height:25px;background-position: 0px -165px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:14px;height:14px;background-position: 0px -190px;"></p></div>
-					</div>
-				</div>
-
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 click" >
-					<div class="middlediv">
-						<span class="middledivspan1">水民</span>
-						<span class="middledivspan2">1号</span>
-					</div>
-				
-					<div class="pi">
-						<div><p  style="background-image: url(img/task7-2.png);width:27px;height:17px;background-position: 0px -128px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:18px;height:20px;background-position: 0px -145px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:26px;height:25px;background-position: 0px -165px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:14px;height:14px;background-position: 0px -190px;"></p></div>
-					</div>
-				</div>
-
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 click" >
-					<div class="middlediv">
-						<span class="middledivspan1">水民</span>
-						<span class="middledivspan2">1号</span>
-					</div>
-				
-					<div class="pi">
-						<div><p  style="background-image: url(img/task7-2.png);width:27px;height:17px;background-position: 0px -128px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:18px;height:20px;background-position: 0px -145px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:26px;height:25px;background-position: 0px -165px;"></p></div>
-						<div><p  style="background-image: url(img/task7-2.png);width:14px;height:14px;background-position: 0px -190px;"></p></div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-
-	</div>
-
-
-
-		
-	<div style="padding-bottom: 200px;background-color:#29bde0;"></div>
-	<div style="max-width: 640px;width: 100%;position: fixed;bottom: 0;background-color: #29bde0;text-align: center;">		
-		<a href="task7-3.htm">
-			<button style="border: none;padding: 4% 35%;margin: 5% auto;background-color: #fbb435;color: white;font-size: 1.8em;">
-          			<span>投死</span>
-        	</button>
-        </a>
-    </div>
-
-		
-
+        </span>
+        <span class="head-middle-triangle"></span>
+        <span class="head-bottom">
+            <span>点击得票数最多人的头像</span>
+        </span>
+    </div>-->
+    <div class="container-fluid middle-back">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 middle-click ">
+                <div class="middle-square">
+                    <span class="middle-role">水民</span>
+                    <span class="middle-number">1号</span>
+                </div>
+                <div class="middle-iconlist">
+                    <div>
+                        <p class="middle-icon1"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon2"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon3"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon4"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 middle-click ">
+                <div class="middle-square">
+                    <span class="middle-role">水民</span>
+                    <span class="middle-number">1号</span>
+                </div>
+                <div class="middle-iconlist">
+                    <div>
+                        <p class="middle-icon1"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon2"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon3"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon4"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 middle-click ">
+                <div class="middle-square">
+                    <span class="middle-role">水民</span>
+                    <span class="middle-number">1号</span>
+                </div>
+                <div class="middle-iconlist">
+                    <div>
+                        <p class="middle-icon1"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon2"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon3"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon4"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 middle-click ">
+                <div class="middle-square">
+                    <span class="middle-role">水民</span>
+                    <span class="middle-number">1号</span>
+                </div>
+                <div class="middle-iconlist">
+                    <div>
+                        <p class="middle-icon1"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon2"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon3"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon4"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 middle-click ">
+                <div class="middle-square">
+                    <span class="middle-role">水民</span>
+                    <span class="middle-number">1号</span>
+                </div>
+                <div class="middle-iconlist">
+                    <div>
+                        <p class="middle-icon1"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon2"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon3"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon4"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 middle-click ">
+                <div class="middle-square">
+                    <span class="middle-role">水民</span>
+                    <span class="middle-number">1号</span>
+                </div>
+                <div class="middle-iconlist">
+                    <div>
+                        <p class="middle-icon1"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon2"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon3"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon4"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 middle-click ">
+                <div class="middle-square">
+                    <span class="middle-role">水民</span>
+                    <span class="middle-number">1号</span>
+                </div>
+                <div class="middle-iconlist">
+                    <div>
+                        <p class="middle-icon1"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon2"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon3"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon4"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 middle-click ">
+                <div class="middle-square">
+                    <span class="middle-role">水民</span>
+                    <span class="middle-number">1号</span>
+                </div>
+                <div class="middle-iconlist">
+                    <div>
+                        <p class="middle-icon1"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon2"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon3"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon4"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 middle-click ">
+                <div class="middle-square">
+                    <span class="middle-role">水民</span>
+                    <span class="middle-number">1号</span>
+                </div>
+                <div class="middle-iconlist">
+                    <div>
+                        <p class="middle-icon1"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon2"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon3"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon4"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 middle-click ">
+                <div class="middle-square">
+                    <span class="middle-role">水民</span>
+                    <span class="middle-number">1号</span>
+                </div>
+                <div class="middle-iconlist">
+                    <div>
+                        <p class="middle-icon1"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon2"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon3"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon4"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 middle-click ">
+                <div class="middle-square">
+                    <span class="middle-role">水民</span>
+                    <span class="middle-number">1号</span>
+                </div>
+                <div class="middle-iconlist">
+                    <div>
+                        <p class="middle-icon1"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon2"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon3"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon4"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 middle-click ">
+                <div class="middle-square">
+                    <span class="middle-role">水民</span>
+                    <span class="middle-number">1号</span>
+                </div>
+                <div class="middle-iconlist">
+                    <div>
+                        <p class="middle-icon1"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon2"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon3"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon4"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 middle-click ">
+                <div class="middle-square">
+                    <span class="middle-role">水民</span>
+                    <span class="middle-number">1号</span>
+                </div>
+                <div class="middle-iconlist">
+                    <div>
+                        <p class="middle-icon1"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon2"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon3"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon4"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 middle-click ">
+                <div class="middle-square">
+                    <span class="middle-role">水民</span>
+                    <span class="middle-number">1号</span>
+                </div>
+                <div class="middle-iconlist">
+                    <div>
+                        <p class="middle-icon1"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon2"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon3"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon4"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 middle-click ">
+                <div class="middle-square">
+                    <span class="middle-role">水民</span>
+                    <span class="middle-number">1号</span>
+                </div>
+                <div class="middle-iconlist">
+                    <div>
+                        <p class="middle-icon1"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon2"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon3"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon4"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 middle-click ">
+                <div class="middle-square">
+                    <span class="middle-role">水民</span>
+                    <span class="middle-number">1号</span>
+                </div>
+                <div class="middle-iconlist">
+                    <div>
+                        <p class="middle-icon1"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon2"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon3"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon4"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 middle-click ">
+                <div class="middle-square">
+                    <span class="middle-role">水民</span>
+                    <span class="middle-number">1号</span>
+                </div>
+                <div class="middle-iconlist">
+                    <div>
+                        <p class="middle-icon1"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon2"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon3"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon4"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 middle-click ">
+                <div class="middle-square">
+                    <span class="middle-role">水民</span>
+                    <span class="middle-number">1号</span>
+                </div>
+                <div class="middle-iconlist">
+                    <div>
+                        <p class="middle-icon1"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon2"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon3"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon4"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 middle-click ">
+                <div class="middle-square">
+                    <span class="middle-role">水民</span>
+                    <span class="middle-number">1号</span>
+                </div>
+                <div class="middle-iconlist">
+                    <div>
+                        <p class="middle-icon1"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon2"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon3"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon4"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 middle-click ">
+                <div class="middle-square">
+                    <span class="middle-role">水民</span>
+                    <span class="middle-number">1号</span>
+                </div>
+                <div class="middle-iconlist">
+                    <div>
+                        <p class="middle-icon1"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon2"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon3"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon4"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 middle-click ">
+                <div class="middle-square">
+                    <span class="middle-role">水民</span>
+                    <span class="middle-number">1号</span>
+                </div>
+                <div class="middle-iconlist">
+                    <div>
+                        <p class="middle-icon1"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon2"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon3"></p>
+                    </div>
+                    <div>
+                        <p class="middle-icon4"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <a href="TASK7-3.htm">
+                <button>
+                    <span>投死</span>
+                </button>
+            </a>
+        </div>
 </body>
+
 </html>
