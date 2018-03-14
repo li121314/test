@@ -1,0 +1,124 @@
+body{
+	margin:0;
+	padding:0;
+	font-family:微软雅黑;
+}
+
+.topspan1{
+	display:inline-block;
+	margin:1% 0 0 5%;
+	color: rgb(41, 176, 120);
+
+}
+
+.topspan2{
+	display:inline-block;
+	background: url(../img/task8-1.png);
+	background-position: 0 0;
+	width: 25px;
+	height: 24px;
+}
+
+.topspan3{
+	display:inline-block;
+	background: url(../img/task8-1.png);
+	background-position: -25px 0;
+	width: 25px;
+	height: 24px;
+}
+
+.topspan4{
+	display:inline-block;
+	background: url(../img/task8-1.png);
+	background-position: -50px 0;
+	width: 25px;
+	height: 24px;
+}
+
+.navbar-nav {
+	float: right;
+}
+
+.navbar-nav > li a {
+	height: 5rem;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	background: #29b078;
+	color: #fff !important;
+
+}
+
+.navbar-nav > li a:hover {
+	border-bottom: 4px solid #fff;
+}
+
+@media only screen and (max-width: 767px) {
+
+
+
+
+
+	.navbar-nav {
+		margin:0;
+		padding:0;
+		width:100%;
+		text-align:center;
+	}
+}
+
+
+
+
+.bottomdiv1{
+	width: 100%;
+	background-color:rgb(41, 176, 120);
+	color: white;
+}
+
+.bottomdiv1 a{
+	color:white;
+}
+
+.bottomdiv2 div{
+	margin-top:2%;
+	margin-left: 5%;
+
+}
+
+.bottomdiv2 div span{
+	display:inline-block;
+	background: url(../img/task8-1.png);
+	background-position: -376px -437px;
+	width: 92px;height: 92px;
+}
+
+.bottomdiv3{
+	background-color:rgb(41, 176, 120);
+	text-align: center;
+	color: white;
+	border-top: 1px solid white;
+}
+
+}
+/*导航栏右侧底下白线条*/
+
+.bottomlist{
+    overflow: hidden;
+}
+.bottomlist li{
+    margin: 1% 1.5rem auto;
+    width: 6rem;
+    color: rgb(163, 163, 163);
+    float: left;
+    font-weight: bold;
+}
+
+.bottomlist a{
+    color: rgb(163, 163, 163);
+}
+.bottomlist a:hover{
+   color:#26a26f;
+}
+/*列表的格式*/
+
+

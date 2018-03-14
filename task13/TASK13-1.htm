@@ -3,50 +3,76 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>游戏</title>
-    <link rel="stylesheet" type="text/css" href="style/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="style/TASK13-1.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>游戏</title>
+    <link rel="stylesheet" type="text/css" href="style/task13-1.css">
 </head>
 
 <body>
-    <div class="navbackcolor">
-        <div class="navleft">
-            <span></span>
-        </div>
+    <!--复选框的作用是通过勾选，修改侧边栏与主体页面的样式，从而实现让侧边栏出现之后可以再隐藏回去的功能-->
+    <input type='checkbox' id='asidemenu'>
+    <aside>
+        <ul>
+            <li><span>公告</span></li>
+            <li><span>公告</span></li>
+            <li><span>公告</span></li>
+            <li><span>公告</span></li>
+        </ul>
+    </aside>
+    <!--整个主体页面用wrap包裹，让主体页面与侧边栏联动-->
+    <main id='wrap'>
         <div class="head">
+            <label for='asidemenu' class="head-btnright"></label>
+            <!--for 属性规定 label 与input复选框绑定，即将这个控制侧边栏进出的按钮与checkbox绑定-->
+        </div>
+        <div class="middle-lastgame">
             <a href="TASK13-2.htm">上次游戏：捉鬼猜词版</a>
-            <span></span>
+
+                <p></p>
+
         </div>
-        <div class="middle">
-            <span class="middlehead">捉鬼游戏</span>
-            <button class="middlebutton">
-                <span>简化版</span>
-            </button>
-            <div class="player">
+        <ul class="middle">
+            <li>
+                <h1 class="middle-catchghostgame">捉鬼游戏</h1>
+            </li>
+            <li>
+                <button>
+                    <p>简化版</p>
+                </button>
+                <span>
                 有1133个用户正在玩此游戏
-            </div>
-            <button class="middlebutton">
-                <span>猜词版</span>
-            </button>
-            <div class="player">
+            </span>
+            </li>
+            <li>
+                <button>
+                    <p>猜词版</p>
+                </button>
+                <span>
                 有1133个用户正在玩此游戏
-            </div>
-            <button class="middlebutton">
-                <span>白痴版</span>
-            </button>
-            <div class="player">
+            </span>
+            </li>
+            <li>
+                <button>
+                    <p>白痴版</p>
+                </button>
+                <span>
                 有1133个用户正在玩此游戏
-            </div>
-            <div>
-                <a href="#" class="footcircle" style="background-color:#69d1e9;"></a>
+            </span>
+            </li>
+            <li>
+                <h2 class="middle-circle">
+                <a href="#" class="footcircle1"></a>
                 <a href="#" class="footcircle"></a>
                 <a href="#" class="footcircle"></a>
                 <a href="#" class="footcircle"></a>
-            </div>
-            <a href="task13-2.htm" class="middlerighttriangle"></a>
+            </h2>
+            </li>
+            <a href="TASK13-2.htm" class="middle-right-arrow ">
+                </a>
+        </ul>
         </div>
-    </div>
+        </mian>
 </body>
 
 </html>
