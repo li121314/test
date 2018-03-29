@@ -1,0 +1,349 @@
+@charset "utf-8";
+
+
+
+
+/*不使用的话，无法在scss中使用中文注释*/
+
+@mixin imgstyle($x, $y, $width, $height) {
+    width: $width;
+    height: $height;
+    background: url(../img/task15-1.png);
+    background-position: $x $y;
+    background-size: 5.73rem 6.27rem;
+}
+
+.box {
+    float: left;
+    margin: .1rem auto;
+    span {
+        display: inline-block;
+    }
+}
+
+.boxcenter {
+    text-align: center;
+}
+
+
+
+
+
+/*轮播图样式*/
+
+.l-frame {
+    position: relative;
+    padding-bottom: 30%;
+    width: 100%;
+}
+
+.l-move+.l-move {
+    opacity: 0;
+    /*前一张图片动画结束时，下一张图片重新开始播放动画*/
+}
+
+.l-imgstyle {
+    padding-bottom: 30%;
+    width: 100%;
+    position: absolute;
+    animation-timing-function: linear;
+    /*线性代数，动画*/
+    animation-name: play;
+    /*动画名称*/
+    animation-iteration-count: infinite;
+    /*动画效果，不断循环*/
+    animation-duration: 20s;
+    /*动画时长*/
+    background-size: 100%;
+    /*图片自适应*/
+}
+
+.l-play {
+    list-style: none;
+}
+
+.l-img1 {
+    background-image: url(../img/task15-1-banner1.png);
+}
+
+.l-img2 {
+    background-image: url(../img/task15-1-banner2.png);
+}
+
+.l-img3 {
+    background-image: url(../img/task15-1-banner3.png);
+}
+
+@keyframes play {
+    0% {
+        opacity: 0;
+        z-index: 2;
+    }
+    /*隐藏到出现*/
+    5% {
+        opacity: 1;
+        z-index: 1;
+    }
+    /*停留*/
+    25% {
+        opacity: 1;
+        z-index: 1;
+    }
+    /*出现到隐藏*/
+    30% {
+        opacity: 0;
+        z-index: 0;
+    }
+    /*一直隐藏*/
+    100% {
+        opacity: 0;
+        z-index: 0;
+    }
+    /*动画效果设置*/
+}
+
+.l-move1 {
+    animation-delay: -1s;
+}
+
+.l-move2 {
+    animation-delay: 4s;
+}
+
+.l-move3 {
+    animation-delay: 9s;
+}
+
+.l-move4 {
+    animation-delay: 14s;
+}
+
+
+
+
+/*动画时间*/
+
+main {
+    overflow: hidden;
+}
+
+.efficiency {
+    @include imgstyle(-.95rem, -.66rem, .62rem, .6rem);
+}
+
+.word-style1 {
+    font-size: .1rem;
+    text-align: left;
+}
+
+.standard {
+    @include imgstyle(-1.6rem, -.66rem, .62rem, .6rem);
+}
+
+.contacts {
+    @include imgstyle(-2.34rem, -.65rem, .62rem, .6rem);
+}
+
+.people {
+    width: 30%;
+    margin: 0 auto;
+    font-size: .1rem;
+    list-style: none;
+}
+
+.littlehead {
+    @include imgstyle(0, -1.12rem, .13rem, .13rem);
+    display: inline-block;
+}
+
+
+.people-number {
+    display: inline-block;
+    font-weight: bold;
+    color: rgb(41, 176, 120);
+}
+
+.people-word {
+    color: #999999;
+}
+
+
+.title {
+    margin: .5rem 0;
+    width: 100%;
+    font-weight: blod;
+    font-size: .2rem;
+    text-align: center;
+}
+
+.hstudy-box-number {
+    padding: .1rem .16rem;
+    color: rgb(41, 176, 120);
+    font-size: .15rem;
+    font-weight: bold;
+    border: 1px solid rgb(235, 234, 235);
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px #ebeaeb;
+    background-color: rgb(255, 255, 255);
+}
+
+.hstudy-box-word {
+    width: 1rem;
+    color: rgb(153, 153, 153);
+    font-size: .1rem;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.hstudy-box-arrow {
+    @include imgstyle(-.13rem, -1.12rem, .28rem, .26rem);
+    vertical-align: middle;
+}
+
+.student {
+    width: 2rem;
+    margin: 0 auto;
+    padding: 0 .1rem;
+    border: .01rem solid #eeeded;
+    border-radius: .1rem;
+    list-style: none;
+    li {
+        display: inline-block;
+        margin: .1rem 0;
+    }
+}
+
+.student-picture1 {
+    @include imgstyle(0, -1.38rem, 1.2rem, 1.16rem);
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.student-picture2 {
+    @include imgstyle(-1.42rem, -1.56rem, 1.2rem, 1.16rem);
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.student-picture3 {
+    @include imgstyle(-3.06rem, -1.73rem, 1.2rem, 1.16rem);
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.student-picture4 {
+    @include imgstyle(-4.43rem, -1.39rem, 1.2rem, 1.16rem);
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.student-name {
+    font-weight: bold;
+}
+
+.student-introduce {
+    font-size: .1rem;
+    color: rgb(153, 153, 153);
+}
+
+.green {
+    background-color: #29b078!important;
+}
+
+.greencircular {
+    list-style: none;
+    text-align: center;
+    li {
+        display: inline-block;
+        width: 20px;
+        padding-bottom: 20px;
+        background-color: #ccc;
+        border-radius: 50%;
+    }
+    li:hover {
+        background-color: #29b078;
+    }
+}
+
+.company {
+    margin: 1rem 0;
+}
+
+
+.link {
+
+    position: relative;
+    color: #999;
+    text-decoration: none;
+}
+
+
+.bot {
+    position: absolute;
+    width: .05rem;
+    height: .05rem;
+    border-radius: 50%;
+    background-color: #999;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -.1rem;
+}
+
+
+.list {
+    color: rgb(163, 163, 163);
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: .1rem 0;
+    padding:0 .5rem;
+
+}
+
+@media only screen and (min-width: 1025px) {
+    .box {
+        width: 25%;
+    }
+    .list {
+        li {
+            width: 10%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .box {
+        width: 50%;
+    }
+    .people {
+        text-align: center;
+    }
+    .list {
+        li {
+            width: 15%;
+        margin-left: .5rem;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 997px) {
+    .list {
+        li {
+             width: 30%;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .box {
+        width: 100%;
+    }
+    .list {
+
+        li {
+            display:block;
+        }
+    }
+}

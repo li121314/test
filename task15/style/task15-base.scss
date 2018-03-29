@@ -1,0 +1,264 @@
+@charset "utf-8";
+
+
+
+/*不使用的话，无法在scss中使用中文注释*/
+
+@mixin imgstyle($x, $y, $width, $height) {
+    width: $width;
+    height: $height;
+    background: url(../img/task15-1.png);
+    background-position: $x $y;
+    background-size: 5.73rem 6.27rem;
+}
+
+
+
+/*清除默认样式*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 625%;
+}
+
+body {
+    font-size: .16rem;
+}
+
+
+
+/*公用样式*/
+/*手写栅格系统*/
+
+.base-container{
+    width:100%;
+    /*宽度为屏幕宽度*/
+    padding:0 .1rem;
+    /*间距*/
+    margin:0 auto;
+    /*居中*/
+}
+
+.base-container * {
+    box-sizing: border-box;
+    /*规定列的宽度，位置和间隔*/
+}
+[class *= 'col-'] {
+    float: left;
+    min-height: 1px;
+    padding: 12px; /* 设置间距 */
+}
+
+.base-row:before .base-row:after {
+    content: "";
+    display: table;
+    clear: both;
+    /*清除浮动*/
+}
+/*不同分辨率下栅格宽度*/
+@media only screen and (min-width: 0px) {
+    .col-1{
+        width:100%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .col-2{
+        width:50%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .col-3{
+        width:25%;
+    }
+}
+
+.base-leftright {
+    /*左右间距*/
+    padding: auto .1rem;
+}
+
+.base-updown {
+    /*上下间距*/
+    margin: .1rem auto;
+}
+
+
+
+/*头部样式*/
+
+.base-head-word {
+    color: rgb(41, 176, 120);
+}
+
+.base-head-img {
+    float: right;
+    span {
+        display: inline-block;
+    }
+}
+
+.base-head-img1 {
+    @include imgstyle(0, 0, .25rem, .24rem);
+}
+
+.base-head-img2 {
+    @include imgstyle(-.25rem, 0, .25rem, .24rem);
+}
+
+.base-head-img3 {
+    @include imgstyle(-.505rem, 0, .25rem, .24rem);
+}
+
+.base-nav {
+    height: .425rem;
+    background: #29b078;
+    overflow: hidden;
+    /*当浏览器分辨率小于768px时，隐藏list*/
+    transition: 0.2s ease-out;
+    img {
+        display: inline-block;
+    }
+}
+
+
+#base-nav-list {
+    float: right;
+    margin-right: 1rem;
+    line-height: .4rem;
+    list-style: none;
+    li {
+        display: inline-block;
+        margin: 0 .1rem;
+        border-bottom: 0.02rem solid transparent;
+    }
+    li:hover {
+        border-bottom: 0.02rem solid white;
+    }
+    /*触碰li标签，底部出现白色线条*/
+    a {
+        font-size: .15rem;
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+
+/*隐藏复选框*/
+
+#navmenu {
+    display: none;
+}
+
+.base-nav-button {
+    display: none;
+    float: right;
+    height: .3rem;
+    padding: .05rem;
+    border-radius: 20%;
+    span {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        display: inline-block;
+        width: .3rem;
+        height: .05rem;
+        border-top: .05rem solid #fff;
+        border-bottom: .05rem solid #fff;
+        background-color: #fff;
+        padding: .05rem 0;
+        background-clip: content-box;
+    }
+    /*汉堡按钮*/
+}
+
+.base-nav-button:hover {
+    background-color: #ccc;
+}
+
+main{
+    overflow:hidden;
+}
+/*底部样式*/
+
+footer {
+    background: #29b078;
+    color: #fff;
+    overflow: hidden;
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.base-bottom-style {
+    display: inline-block;
+    float: left;
+    width: 33.3%;
+    list-style: none;
+}
+
+.base-bottom-change {
+    margin-bottom: .6rem;
+}
+
+.base-bottom-website {
+    li {
+        margin-bottom: .2rem;
+        a:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.base-bottom-weixin {
+    text-align: center;
+}
+
+.base-bottom-skilltree {
+    float: left;
+    width: 100%;
+    font-size: .1rem;
+    text-align: center;
+}
+
+
+
+/*媒体查询*/
+
+@media only screen and (max-width: 768px) {
+    /*当页面小于768px时，修改导航栏的样式*/
+    .base-nav-button {
+        display: block;
+    }
+    #navmenu:checked+nav {
+        height: 2.2rem;
+        /*nav高度增加，显示list*/
+    }
+
+    #base-nav-list {
+        float: none;
+        margin: 0;
+        text-align: center;
+        border-top: .01rem solid #fff;
+        li {
+            margin: 0;
+            width: 100%;
+        }
+    }
+    .base-bottom-style {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 377px) {
+    .base-head-img {
+        display: none;
+    }
+}
+
+

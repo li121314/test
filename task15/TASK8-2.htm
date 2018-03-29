@@ -1,0 +1,2544 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style/task8-2.css">
+    <link rel="stylesheet" type="text/css" href="style/task8-base.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>职业列表</title>
+</head>
+
+<body>
+    <div style="width:100%;overflow: hidden;">
+        <span class="topspan1">客服热线：010-594-78414</span>
+        <div style="display: inline-block;float: right;margin:1% 10% 0 0;">
+            <span class="topspan2"></span>
+            <span class="topspan3"></span>
+            <span class="topspan4"></span>
+        </div>
+    </div>
+    <nav class="navbar navbar-default" role="navigation" style="margin: 0; padding: 0 8%; border: currentColor;  width: 100%; color: white; overflow: hidden; vertical-align: middle; background-color: rgb(41, 176, 120);border-radius: 0;">
+        <!-- 导航栏的背景设置 -->
+        <div class="container-fluid">
+            <!-- 导航栏的自适应容器 -->
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#example-navbar-collapse">
+                    <!-- 缩小时导航栏的按钮设置 -->
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" style="width:10rem;height:5rem;display: flex;flex-direction: row;align-items: center;">
+                    <img src="img/task8-1-nav.png" class="img-responsive" alt="">
+                </a>
+                <!-- 导航栏左边的文字或图片或其他 -->
+            </div>
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="TASK8-1.htm">首页</a></li>
+                    <li><a href="TASK8-2.htm">职业</a></li>
+                    <li><a href="TASK8-3.htm">推荐</a></li>
+                    <li><a href="TASK8-1.htm">关于</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row" style="width:95%;margin:0 auto;">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border-bottom: 1px solid #ccc;padding-bottom: 1rem;margin-bottom: 1rem;">
+                <span>首页></span>
+                <span style="color:#29b078">职业</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 headlist" style="border-bottom: 1px solid #ccc;padding-bottom: 1rem;">
+                <span style="color:#ccc;font-size: 0.5rem;">方向：</span>
+                <span><a href="#">全部</a></span>
+                <span><a href="#">前段开发</a></span>
+                <span><a href="#">后端开发</a></span>
+                <span><a href="#">移动开发</a></span>
+                <span><a href="#">整站开发</a></span>
+                <span><a href="#">运营维护</a></span>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" style="width:95%;margin:0 auto;">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border-bottom: 1px solid #ccc;padding:2% 0;margin-top: 1%;font-size: 1.5rem;">
+                <span><strong>前端开发方向</strong></span>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" style="margin:5% 0;max-width: 380px;">
+                <div class="middle-hide">
+                    <table style="border: 1px solid rgb(238, 237, 237);">
+                        <tbody>
+                            <tr>
+                                <td colspan="4" style="padding: 1rem;">
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -18px 0;width:125px ;height:154px; "></span>
+                                </td>
+                                <td colspan="6">
+                                    <h4 style="font-weight: bold;">Web前端工程师</h4>
+                                    <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScript/flash等各种Web技术进行产品的开发</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem;">门槛</span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); " ">
+                            <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem; " >难易程度</span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153);padding-right: 1rem; " >成长周期</span>
+                            <span style="color:red; ">1-3</span>
+                            <span>年</span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153);padding-right: 1rem; " >缺稀程度</span>
+                           <span style="color:red; " >345</span>
+                           <span>家公司需要</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3 " colspan="4 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153); ">
+                                            薪资待遇
+                            </span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                        0-1年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                            5k-10k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                            1-3年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                            10k-20k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                            3-5年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                        20k-50k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <strong>
+                                        有
+                                <span style="color: red; ">286</span>
+                                        人在学
+                            </strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153); ">
+                                        提示：在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="middle-hide-index ">
+                <h4>iOS工程师</h4>
+                <p>&nbsp;&nbsp;&nbsp;iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 "  style="margin:5% 0;max-width: 380px; ">
+            <div class="middle-hide ">
+            <table style="border: 1px solid rgb(238, 237, 237); ">
+                <tbody>
+                    <tr>
+                        <td colspan="4 " style="padding: 1rem; ">
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -18px 0;width:125px ;height:154px; "></span>
+                        </td>
+                        <td colspan="6 ">
+                              <h4 style="font-weight: bold; ">Web前端工程师</h4>
+                              <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScript/flash等各种Web技术进行产品的开发</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem; ">门槛</span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); "">
+                                    <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem;">难易程度</span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="color:rgb(153, 153, 153);padding-right: 1rem;">成长周期</span>
+                                    <span style="color:red;">1-3</span>
+                                    <span>年</span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="color:rgb(153, 153, 153);padding-right: 1rem;">缺稀程度</span>
+                                    <span style="color:red;">345</span>
+                                    <span>家公司需要</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3" colspan="4" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style="color:rgb(153, 153, 153);">
+                                            薪资待遇
+                            </span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                        0-1年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                            5k-10k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                            1-3年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                            10k-20k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                            3-5年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                        20k-50k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" style="border: 1px solid rgb(238, 237, 237);">
+                                    <strong>
+                                        有
+                                <span style="color: red;">286</span>
+                                        人在学
+                            </strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style="color:rgb(153, 153, 153);">
+                                        提示：在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础
+                            </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="middle-hide-index">
+                        <h4>iOS工程师</h4>
+                        <p>&nbsp;&nbsp;&nbsp;iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" style="margin:5% 0;max-width: 380px;">
+                <div class="middle-hide">
+                    <table style="border: 1px solid rgb(238, 237, 237);">
+                        <tbody>
+                            <tr>
+                                <td colspan="4" style="padding: 1rem;">
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -18px 0;width:125px ;height:154px; "></span>
+                                </td>
+                                <td colspan="6">
+                                    <h4 style="font-weight: bold;">Web前端工程师</h4>
+                                    <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScript/flash等各种Web技术进行产品的开发</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem;">门槛</span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); " ">
+                            <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem; " >难易程度</span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153);padding-right: 1rem; " >成长周期</span>
+                            <span style="color:red; ">1-3</span>
+                            <span>年</span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153);padding-right: 1rem; " >缺稀程度</span>
+                           <span style="color:red; " >345</span>
+                           <span>家公司需要</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3 " colspan="4 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153); ">
+                                            薪资待遇
+                            </span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                        0-1年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                            5k-10k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                            1-3年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                            10k-20k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                            3-5年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                        20k-50k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <strong>
+                                        有
+                                <span style="color: red; ">286</span>
+                                        人在学
+                            </strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153); ">
+                                        提示：在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="middle-hide-index ">
+                <h4>iOS工程师</h4>
+                <p>&nbsp;&nbsp;&nbsp;iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+            </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 "  style="margin:5% 0;max-width: 380px; ">
+            <div class="middle-hide ">
+            <table style="border: 1px solid rgb(238, 237, 237); ">
+                <tbody>
+                    <tr>
+                        <td colspan="4 " style="padding: 1rem; ">
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -18px 0;width:125px ;height:154px; "></span>
+                        </td>
+                        <td colspan="6 ">
+                              <h4 style="font-weight: bold; ">Web前端工程师</h4>
+                              <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScript/flash等各种Web技术进行产品的开发</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem; ">门槛</span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); "">
+                                    <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem;">难易程度</span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="color:rgb(153, 153, 153);padding-right: 1rem;">成长周期</span>
+                                    <span style="color:red;">1-3</span>
+                                    <span>年</span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="color:rgb(153, 153, 153);padding-right: 1rem;">缺稀程度</span>
+                                    <span style="color:red;">345</span>
+                                    <span>家公司需要</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3" colspan="4" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style="color:rgb(153, 153, 153);">
+                                            薪资待遇
+                            </span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                        0-1年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                            5k-10k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                            1-3年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                            10k-20k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                            3-5年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                        20k-50k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" style="border: 1px solid rgb(238, 237, 237);">
+                                    <strong>
+                                        有
+                                <span style="color: red;">286</span>
+                                        人在学
+                            </strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style="color:rgb(153, 153, 153);">
+                                        提示：在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础
+                            </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="middle-hide-index">
+                        <h4>iOS工程师</h4>
+                        <p>&nbsp;&nbsp;&nbsp;iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" style="margin:5% 0;max-width: 380px;">
+                <div class="middle-hide">
+                    <table style="border: 1px solid rgb(238, 237, 237);">
+                        <tbody>
+                            <tr>
+                                <td colspan="4" style="padding: 1rem;">
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -18px 0;width:125px ;height:154px; "></span>
+                                </td>
+                                <td colspan="6">
+                                    <h4 style="font-weight: bold;">Web前端工程师</h4>
+                                    <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScript/flash等各种Web技术进行产品的开发</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem;">门槛</span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); " ">
+                            <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem; " >难易程度</span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153);padding-right: 1rem; " >成长周期</span>
+                            <span style="color:red; ">1-3</span>
+                            <span>年</span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153);padding-right: 1rem; " >缺稀程度</span>
+                           <span style="color:red; " >345</span>
+                           <span>家公司需要</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3 " colspan="4 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153); ">
+                                            薪资待遇
+                            </span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                        0-1年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                            5k-10k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                            1-3年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                            10k-20k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                            3-5年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                        20k-50k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <strong>
+                                        有
+                                <span style="color: red; ">286</span>
+                                        人在学
+                            </strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153); ">
+                                        提示：在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="middle-hide-index ">
+                <h4>iOS工程师</h4>
+                <p>&nbsp;&nbsp;&nbsp;iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 " style="border-bottom: 1px solid #ccc;padding:2% 0;margin-top: 1%;font-size: 1.5rem; ">
+       <span><strong>后端开发方向</strong></span>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 "  style="margin:5% 0;max-width: 380px; ">
+            <div class="middle-hide ">
+            <table style="border: 1px solid rgb(238, 237, 237); ">
+                <tbody>
+                    <tr>
+                        <td colspan="4 " style="padding: 1rem; ">
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -18px 0;width:125px ;height:154px; "></span>
+                        </td>
+                        <td colspan="6 ">
+                              <h4 style="font-weight: bold; ">Web前端工程师</h4>
+                              <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScript/flash等各种Web技术进行产品的开发</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem; ">门槛</span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); "">
+                                    <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem;">难易程度</span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="color:rgb(153, 153, 153);padding-right: 1rem;">成长周期</span>
+                                    <span style="color:red;">1-3</span>
+                                    <span>年</span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="color:rgb(153, 153, 153);padding-right: 1rem;">缺稀程度</span>
+                                    <span style="color:red;">345</span>
+                                    <span>家公司需要</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3" colspan="4" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style="color:rgb(153, 153, 153);">
+                                            薪资待遇
+                            </span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                        0-1年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                            5k-10k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                            1-3年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                            10k-20k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                            3-5年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                        20k-50k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" style="border: 1px solid rgb(238, 237, 237);">
+                                    <strong>
+                                        有
+                                <span style="color: red;">286</span>
+                                        人在学
+                            </strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style="color:rgb(153, 153, 153);">
+                                        提示：在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础
+                            </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="middle-hide-index">
+                        <h4>iOS工程师</h4>
+                        <p>&nbsp;&nbsp;&nbsp;iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" style="margin:5% 0;max-width: 380px;">
+                <div class="middle-hide">
+                    <table style="border: 1px solid rgb(238, 237, 237);">
+                        <tbody>
+                            <tr>
+                                <td colspan="4" style="padding: 1rem;">
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -18px 0;width:125px ;height:154px; "></span>
+                                </td>
+                                <td colspan="6">
+                                    <h4 style="font-weight: bold;">Web前端工程师</h4>
+                                    <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScript/flash等各种Web技术进行产品的开发</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem;">门槛</span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); " ">
+                            <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem; " >难易程度</span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153);padding-right: 1rem; " >成长周期</span>
+                            <span style="color:red; ">1-3</span>
+                            <span>年</span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153);padding-right: 1rem; " >缺稀程度</span>
+                           <span style="color:red; " >345</span>
+                           <span>家公司需要</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3 " colspan="4 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153); ">
+                                            薪资待遇
+                            </span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                        0-1年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                            5k-10k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                            1-3年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                            10k-20k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                            3-5年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                        20k-50k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <strong>
+                                        有
+                                <span style="color: red; ">286</span>
+                                        人在学
+                            </strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153); ">
+                                        提示：在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="middle-hide-index ">
+                <h4>iOS工程师</h4>
+                <p>&nbsp;&nbsp;&nbsp;iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 "  style="margin:5% 0;max-width: 380px; ">
+            <div class="middle-hide ">
+            <table style="border: 1px solid rgb(238, 237, 237); ">
+                <tbody>
+                    <tr>
+                        <td colspan="4 " style="padding: 1rem; ">
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -18px 0;width:125px ;height:154px; "></span>
+                        </td>
+                        <td colspan="6 ">
+                              <h4 style="font-weight: bold; ">Web前端工程师</h4>
+                              <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScript/flash等各种Web技术进行产品的开发</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem; ">门槛</span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); "">
+                                    <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem;">难易程度</span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="color:rgb(153, 153, 153);padding-right: 1rem;">成长周期</span>
+                                    <span style="color:red;">1-3</span>
+                                    <span>年</span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="color:rgb(153, 153, 153);padding-right: 1rem;">缺稀程度</span>
+                                    <span style="color:red;">345</span>
+                                    <span>家公司需要</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3" colspan="4" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style="color:rgb(153, 153, 153);">
+                                            薪资待遇
+                            </span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                        0-1年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                            5k-10k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                            1-3年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                            10k-20k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                            3-5年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                        20k-50k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" style="border: 1px solid rgb(238, 237, 237);">
+                                    <strong>
+                                        有
+                                <span style="color: red;">286</span>
+                                        人在学
+                            </strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style="color:rgb(153, 153, 153);">
+                                        提示：在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础
+                            </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="middle-hide-index">
+                        <h4>iOS工程师</h4>
+                        <p>&nbsp;&nbsp;&nbsp;iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" style="margin:5% 0;max-width: 380px;">
+                <div class="middle-hide">
+                    <table style="border: 1px solid rgb(238, 237, 237);">
+                        <tbody>
+                            <tr>
+                                <td colspan="4" style="padding: 1rem;">
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -18px 0;width:125px ;height:154px; "></span>
+                                </td>
+                                <td colspan="6">
+                                    <h4 style="font-weight: bold;">Web前端工程师</h4>
+                                    <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScript/flash等各种Web技术进行产品的开发</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem;">门槛</span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); " ">
+                            <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem; " >难易程度</span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153);padding-right: 1rem; " >成长周期</span>
+                            <span style="color:red; ">1-3</span>
+                            <span>年</span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153);padding-right: 1rem; " >缺稀程度</span>
+                           <span style="color:red; " >345</span>
+                           <span>家公司需要</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3 " colspan="4 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153); ">
+                                            薪资待遇
+                            </span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                        0-1年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                            5k-10k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                            1-3年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                            10k-20k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                            3-5年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                        20k-50k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <strong>
+                                        有
+                                <span style="color: red; ">286</span>
+                                        人在学
+                            </strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153); ">
+                                        提示：在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="middle-hide-index ">
+                <h4>iOS工程师</h4>
+                <p>&nbsp;&nbsp;&nbsp;iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+            </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 "  style="margin:5% 0;max-width: 380px; ">
+            <div class="middle-hide ">
+            <table style="border: 1px solid rgb(238, 237, 237); ">
+                <tbody>
+                    <tr>
+                        <td colspan="4 " style="padding: 1rem; ">
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -18px 0;width:125px ;height:154px; "></span>
+                        </td>
+                        <td colspan="6 ">
+                              <h4 style="font-weight: bold; ">Web前端工程师</h4>
+                              <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScript/flash等各种Web技术进行产品的开发</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem; ">门槛</span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); "">
+                                    <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem;">难易程度</span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="color:rgb(153, 153, 153);padding-right: 1rem;">成长周期</span>
+                                    <span style="color:red;">1-3</span>
+                                    <span>年</span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="color:rgb(153, 153, 153);padding-right: 1rem;">缺稀程度</span>
+                                    <span style="color:red;">345</span>
+                                    <span>家公司需要</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3" colspan="4" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style="color:rgb(153, 153, 153);">
+                                            薪资待遇
+                            </span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                        0-1年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                            5k-10k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                            1-3年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                            10k-20k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                            3-5年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                        20k-50k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" style="border: 1px solid rgb(238, 237, 237);">
+                                    <strong>
+                                        有
+                                <span style="color: red;">286</span>
+                                        人在学
+                            </strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style="color:rgb(153, 153, 153);">
+                                        提示：在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础
+                            </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="middle-hide-index">
+                        <h4>iOS工程师</h4>
+                        <p>&nbsp;&nbsp;&nbsp;iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border-bottom: 1px solid #ccc;padding:2% 0;margin-top: 1%;font-size: 1.5rem;">
+                <span><strong>移动开发方向</strong></span>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" style="margin:5% 0;max-width: 380px;">
+                <div class="middle-hide">
+                    <table style="border: 1px solid rgb(238, 237, 237);">
+                        <tbody>
+                            <tr>
+                                <td colspan="4" style="padding: 1rem;">
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -18px 0;width:125px ;height:154px; "></span>
+                                </td>
+                                <td colspan="6">
+                                    <h4 style="font-weight: bold;">Web前端工程师</h4>
+                                    <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScript/flash等各种Web技术进行产品的开发</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem;">门槛</span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); " ">
+                            <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem; " >难易程度</span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153);padding-right: 1rem; " >成长周期</span>
+                            <span style="color:red; ">1-3</span>
+                            <span>年</span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153);padding-right: 1rem; " >缺稀程度</span>
+                           <span style="color:red; " >345</span>
+                           <span>家公司需要</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3 " colspan="4 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153); ">
+                                            薪资待遇
+                            </span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                        0-1年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                            5k-10k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                            1-3年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                            10k-20k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                            3-5年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                        20k-50k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <strong>
+                                        有
+                                <span style="color: red; ">286</span>
+                                        人在学
+                            </strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153); ">
+                                        提示：在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="middle-hide-index ">
+                <h4>iOS工程师</h4>
+                <p>&nbsp;&nbsp;&nbsp;iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 "  style="margin:5% 0;max-width: 380px; ">
+            <div class="middle-hide ">
+            <table style="border: 1px solid rgb(238, 237, 237); ">
+                <tbody>
+                    <tr>
+                        <td colspan="4 " style="padding: 1rem; ">
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -18px 0;width:125px ;height:154px; "></span>
+                        </td>
+                        <td colspan="6 ">
+                              <h4 style="font-weight: bold; ">Web前端工程师</h4>
+                              <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScript/flash等各种Web技术进行产品的开发</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem; ">门槛</span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); "">
+                                    <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem;">难易程度</span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="color:rgb(153, 153, 153);padding-right: 1rem;">成长周期</span>
+                                    <span style="color:red;">1-3</span>
+                                    <span>年</span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="color:rgb(153, 153, 153);padding-right: 1rem;">缺稀程度</span>
+                                    <span style="color:red;">345</span>
+                                    <span>家公司需要</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3" colspan="4" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style="color:rgb(153, 153, 153);">
+                                            薪资待遇
+                            </span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                        0-1年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                            5k-10k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                            1-3年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                            10k-20k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                            3-5年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                        20k-50k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" style="border: 1px solid rgb(238, 237, 237);">
+                                    <strong>
+                                        有
+                                <span style="color: red;">286</span>
+                                        人在学
+                            </strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style="color:rgb(153, 153, 153);">
+                                        提示：在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础
+                            </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="middle-hide-index">
+                        <h4>iOS工程师</h4>
+                        <p>&nbsp;&nbsp;&nbsp;iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" style="margin:5% 0;max-width: 380px;">
+                <div class="middle-hide">
+                    <table style="border: 1px solid rgb(238, 237, 237);">
+                        <tbody>
+                            <tr>
+                                <td colspan="4" style="padding: 1rem;">
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -18px 0;width:125px ;height:154px; "></span>
+                                </td>
+                                <td colspan="6">
+                                    <h4 style="font-weight: bold;">Web前端工程师</h4>
+                                    <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScript/flash等各种Web技术进行产品的开发</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem;">门槛</span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); " ">
+                            <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem; " >难易程度</span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153);padding-right: 1rem; " >成长周期</span>
+                            <span style="color:red; ">1-3</span>
+                            <span>年</span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153);padding-right: 1rem; " >缺稀程度</span>
+                           <span style="color:red; " >345</span>
+                           <span>家公司需要</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3 " colspan="4 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153); ">
+                                            薪资待遇
+                            </span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                        0-1年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                            5k-10k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                            1-3年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                            10k-20k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                            3-5年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                        20k-50k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <strong>
+                                        有
+                                <span style="color: red; ">286</span>
+                                        人在学
+                            </strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153); ">
+                                        提示：在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="middle-hide-index ">
+                <h4>iOS工程师</h4>
+                <p>&nbsp;&nbsp;&nbsp;iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+            </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 "  style="margin:5% 0;max-width: 380px; ">
+            <div class="middle-hide ">
+            <table style="border: 1px solid rgb(238, 237, 237); ">
+                <tbody>
+                    <tr>
+                        <td colspan="4 " style="padding: 1rem; ">
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -18px 0;width:125px ;height:154px; "></span>
+                        </td>
+                        <td colspan="6 ">
+                              <h4 style="font-weight: bold; ">Web前端工程师</h4>
+                              <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScript/flash等各种Web技术进行产品的开发</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem; ">门槛</span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); "">
+                                    <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem;">难易程度</span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="color:rgb(153, 153, 153);padding-right: 1rem;">成长周期</span>
+                                    <span style="color:red;">1-3</span>
+                                    <span>年</span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="color:rgb(153, 153, 153);padding-right: 1rem;">缺稀程度</span>
+                                    <span style="color:red;">345</span>
+                                    <span>家公司需要</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3" colspan="4" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style="color:rgb(153, 153, 153);">
+                                            薪资待遇
+                            </span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                        0-1年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                            5k-10k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                            1-3年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                            10k-20k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                            3-5年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                        20k-50k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" style="border: 1px solid rgb(238, 237, 237);">
+                                    <strong>
+                                        有
+                                <span style="color: red;">286</span>
+                                        人在学
+                            </strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style="color:rgb(153, 153, 153);">
+                                        提示：在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础
+                            </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="middle-hide-index">
+                        <h4>iOS工程师</h4>
+                        <p>&nbsp;&nbsp;&nbsp;iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" style="margin:5% 0;max-width: 380px;">
+                <div class="middle-hide">
+                    <table style="border: 1px solid rgb(238, 237, 237);">
+                        <tbody>
+                            <tr>
+                                <td colspan="4" style="padding: 1rem;">
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -18px 0;width:125px ;height:154px; "></span>
+                                </td>
+                                <td colspan="6">
+                                    <h4 style="font-weight: bold;">Web前端工程师</h4>
+                                    <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScript/flash等各种Web技术进行产品的开发</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem;">门槛</span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); " ">
+                            <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem; " >难易程度</span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153);padding-right: 1rem; " >成长周期</span>
+                            <span style="color:red; ">1-3</span>
+                            <span>年</span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153);padding-right: 1rem; " >缺稀程度</span>
+                           <span style="color:red; " >345</span>
+                           <span>家公司需要</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3 " colspan="4 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153); ">
+                                            薪资待遇
+                            </span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                        0-1年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                            5k-10k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                            1-3年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                            10k-20k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                            3-5年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                        20k-50k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <strong>
+                                        有
+                                <span style="color: red; ">286</span>
+                                        人在学
+                            </strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153); ">
+                                        提示：在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="middle-hide-index ">
+                <h4>iOS工程师</h4>
+                <p>&nbsp;&nbsp;&nbsp;iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 " style="border-bottom: 1px solid #ccc;padding:2% 0;margin-top: 1%;font-size: 1.5rem; ">
+       <span><strong>整站开发方向</strong></span>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 "  style="margin:5% 0;max-width: 380px; ">
+            <div class="middle-hide ">
+            <table style="border: 1px solid rgb(238, 237, 237); ">
+                <tbody>
+                    <tr>
+                        <td colspan="4 " style="padding: 1rem; ">
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -18px 0;width:125px ;height:154px; "></span>
+                        </td>
+                        <td colspan="6 ">
+                              <h4 style="font-weight: bold; ">Web前端工程师</h4>
+                              <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScript/flash等各种Web技术进行产品的开发</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem; ">门槛</span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); "">
+                                    <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem;">难易程度</span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="color:rgb(153, 153, 153);padding-right: 1rem;">成长周期</span>
+                                    <span style="color:red;">1-3</span>
+                                    <span>年</span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="color:rgb(153, 153, 153);padding-right: 1rem;">缺稀程度</span>
+                                    <span style="color:red;">345</span>
+                                    <span>家公司需要</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3" colspan="4" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style="color:rgb(153, 153, 153);">
+                                            薪资待遇
+                            </span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                        0-1年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                            5k-10k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                            1-3年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                            10k-20k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                            3-5年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                        20k-50k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" style="border: 1px solid rgb(238, 237, 237);">
+                                    <strong>
+                                        有
+                                <span style="color: red;">286</span>
+                                        人在学
+                            </strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style="color:rgb(153, 153, 153);">
+                                        提示：在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础
+                            </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="middle-hide-index">
+                        <h4>iOS工程师</h4>
+                        <p>&nbsp;&nbsp;&nbsp;iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" style="margin:5% 0;max-width: 380px;">
+                <div class="middle-hide">
+                    <table style="border: 1px solid rgb(238, 237, 237);">
+                        <tbody>
+                            <tr>
+                                <td colspan="4" style="padding: 1rem;">
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -18px 0;width:125px ;height:154px; "></span>
+                                </td>
+                                <td colspan="6">
+                                    <h4 style="font-weight: bold;">Web前端工程师</h4>
+                                    <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScript/flash等各种Web技术进行产品的开发</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem;">门槛</span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); " ">
+                            <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem; " >难易程度</span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153);padding-right: 1rem; " >成长周期</span>
+                            <span style="color:red; ">1-3</span>
+                            <span>年</span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153);padding-right: 1rem; " >缺稀程度</span>
+                           <span style="color:red; " >345</span>
+                           <span>家公司需要</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3 " colspan="4 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153); ">
+                                            薪资待遇
+                            </span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                        0-1年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                            5k-10k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                            1-3年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                            10k-20k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                            3-5年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                        20k-50k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <strong>
+                                        有
+                                <span style="color: red; ">286</span>
+                                        人在学
+                            </strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153); ">
+                                        提示：在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="middle-hide-index ">
+                <h4>iOS工程师</h4>
+                <p>&nbsp;&nbsp;&nbsp;iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 "  style="margin:5% 0;max-width: 380px; ">
+            <div class="middle-hide ">
+            <table style="border: 1px solid rgb(238, 237, 237); ">
+                <tbody>
+                    <tr>
+                        <td colspan="4 " style="padding: 1rem; ">
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -18px 0;width:125px ;height:154px; "></span>
+                        </td>
+                        <td colspan="6 ">
+                              <h4 style="font-weight: bold; ">Web前端工程师</h4>
+                              <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScript/flash等各种Web技术进行产品的开发</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem; ">门槛</span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); "">
+                                    <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem;">难易程度</span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="color:rgb(153, 153, 153);padding-right: 1rem;">成长周期</span>
+                                    <span style="color:red;">1-3</span>
+                                    <span>年</span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="color:rgb(153, 153, 153);padding-right: 1rem;">缺稀程度</span>
+                                    <span style="color:red;">345</span>
+                                    <span>家公司需要</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3" colspan="4" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style="color:rgb(153, 153, 153);">
+                                            薪资待遇
+                            </span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                        0-1年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                            5k-10k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                            1-3年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                            10k-20k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                            3-5年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                        20k-50k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" style="border: 1px solid rgb(238, 237, 237);">
+                                    <strong>
+                                        有
+                                <span style="color: red;">286</span>
+                                        人在学
+                            </strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style="color:rgb(153, 153, 153);">
+                                        提示：在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础
+                            </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="middle-hide-index">
+                        <h4>iOS工程师</h4>
+                        <p>&nbsp;&nbsp;&nbsp;iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" style="margin:5% 0;max-width: 380px;">
+                <div class="middle-hide">
+                    <table style="border: 1px solid rgb(238, 237, 237);">
+                        <tbody>
+                            <tr>
+                                <td colspan="4" style="padding: 1rem;">
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -18px 0;width:125px ;height:154px; "></span>
+                                </td>
+                                <td colspan="6">
+                                    <h4 style="font-weight: bold;">Web前端工程师</h4>
+                                    <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScript/flash等各种Web技术进行产品的开发</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem;">门槛</span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); " ">
+                            <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem; " >难易程度</span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153);padding-right: 1rem; " >成长周期</span>
+                            <span style="color:red; ">1-3</span>
+                            <span>年</span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153);padding-right: 1rem; " >缺稀程度</span>
+                           <span style="color:red; " >345</span>
+                           <span>家公司需要</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3 " colspan="4 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153); ">
+                                            薪资待遇
+                            </span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                        0-1年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                            5k-10k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                            1-3年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                            10k-20k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                            3-5年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                        20k-50k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <strong>
+                                        有
+                                <span style="color: red; ">286</span>
+                                        人在学
+                            </strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153); ">
+                                        提示：在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="middle-hide-index ">
+                <h4>iOS工程师</h4>
+                <p>&nbsp;&nbsp;&nbsp;iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+            </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 "  style="margin:5% 0;max-width: 380px; ">
+            <div class="middle-hide ">
+            <table style="border: 1px solid rgb(238, 237, 237); ">
+                <tbody>
+                    <tr>
+                        <td colspan="4 " style="padding: 1rem; ">
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -18px 0;width:125px ;height:154px; "></span>
+                        </td>
+                        <td colspan="6 ">
+                              <h4 style="font-weight: bold; ">Web前端工程师</h4>
+                              <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScript/flash等各种Web技术进行产品的开发</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem; ">门槛</span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); "">
+                                    <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem;">难易程度</span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="color:rgb(153, 153, 153);padding-right: 1rem;">成长周期</span>
+                                    <span style="color:red;">1-3</span>
+                                    <span>年</span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="color:rgb(153, 153, 153);padding-right: 1rem;">缺稀程度</span>
+                                    <span style="color:red;">345</span>
+                                    <span>家公司需要</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3" colspan="4" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style="color:rgb(153, 153, 153);">
+                                            薪资待遇
+                            </span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                        0-1年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                            5k-10k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                            1-3年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                            10k-20k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                            3-5年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                        20k-50k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" style="border: 1px solid rgb(238, 237, 237);">
+                                    <strong>
+                                        有
+                                <span style="color: red;">286</span>
+                                        人在学
+                            </strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style="color:rgb(153, 153, 153);">
+                                        提示：在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础
+                            </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="middle-hide-index">
+                        <h4>iOS工程师</h4>
+                        <p>&nbsp;&nbsp;&nbsp;iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border-bottom: 1px solid #ccc;padding:2% 0;margin-top: 1%;font-size: 1.5rem;">
+                <span><strong>运营维护方向</strong></span>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" style="margin:5% 0;max-width: 380px;">
+                <div class="middle-hide">
+                    <table style="border: 1px solid rgb(238, 237, 237);">
+                        <tbody>
+                            <tr>
+                                <td colspan="4" style="padding: 1rem;">
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -18px 0;width:125px ;height:154px; "></span>
+                                </td>
+                                <td colspan="6">
+                                    <h4 style="font-weight: bold;">Web前端工程师</h4>
+                                    <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScript/flash等各种Web技术进行产品的开发</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem;">门槛</span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); " ">
+                            <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem; " >难易程度</span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153);padding-right: 1rem; " >成长周期</span>
+                            <span style="color:red; ">1-3</span>
+                            <span>年</span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153);padding-right: 1rem; " >缺稀程度</span>
+                           <span style="color:red; " >345</span>
+                           <span>家公司需要</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3 " colspan="4 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153); ">
+                                            薪资待遇
+                            </span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                        0-1年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                            5k-10k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                            1-3年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                            10k-20k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                            3-5年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                        20k-50k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <strong>
+                                        有
+                                <span style="color: red; ">286</span>
+                                        人在学
+                            </strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153); ">
+                                        提示：在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="middle-hide-index ">
+                <h4>iOS工程师</h4>
+                <p>&nbsp;&nbsp;&nbsp;iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 "  style="margin:5% 0;max-width: 380px; ">
+            <div class="middle-hide ">
+            <table style="border: 1px solid rgb(238, 237, 237); ">
+                <tbody>
+                    <tr>
+                        <td colspan="4 " style="padding: 1rem; ">
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -18px 0;width:125px ;height:154px; "></span>
+                        </td>
+                        <td colspan="6 ">
+                              <h4 style="font-weight: bold; ">Web前端工程师</h4>
+                              <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScript/flash等各种Web技术进行产品的开发</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem; ">门槛</span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); "">
+                                    <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem;">难易程度</span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="color:rgb(153, 153, 153);padding-right: 1rem;">成长周期</span>
+                                    <span style="color:red;">1-3</span>
+                                    <span>年</span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="color:rgb(153, 153, 153);padding-right: 1rem;">缺稀程度</span>
+                                    <span style="color:red;">345</span>
+                                    <span>家公司需要</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3" colspan="4" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style="color:rgb(153, 153, 153);">
+                                            薪资待遇
+                            </span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                        0-1年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                            5k-10k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                            1-3年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                            10k-20k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                            3-5年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                        20k-50k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" style="border: 1px solid rgb(238, 237, 237);">
+                                    <strong>
+                                        有
+                                <span style="color: red;">286</span>
+                                        人在学
+                            </strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style="color:rgb(153, 153, 153);">
+                                        提示：在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础
+                            </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="middle-hide-index">
+                        <h4>iOS工程师</h4>
+                        <p>&nbsp;&nbsp;&nbsp;iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" style="margin:5% 0;max-width: 380px;">
+                <div class="middle-hide">
+                    <table style="border: 1px solid rgb(238, 237, 237);">
+                        <tbody>
+                            <tr>
+                                <td colspan="4" style="padding: 1rem;">
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -18px 0;width:125px ;height:154px; "></span>
+                                </td>
+                                <td colspan="6">
+                                    <h4 style="font-weight: bold;">Web前端工程师</h4>
+                                    <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScript/flash等各种Web技术进行产品的开发</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem;">门槛</span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); " ">
+                            <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem; " >难易程度</span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153);padding-right: 1rem; " >成长周期</span>
+                            <span style="color:red; ">1-3</span>
+                            <span>年</span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153);padding-right: 1rem; " >缺稀程度</span>
+                           <span style="color:red; " >345</span>
+                           <span>家公司需要</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3 " colspan="4 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153); ">
+                                            薪资待遇
+                            </span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                        0-1年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                            5k-10k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                            1-3年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                            10k-20k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                            3-5年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                        20k-50k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <strong>
+                                        有
+                                <span style="color: red; ">286</span>
+                                        人在学
+                            </strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153); ">
+                                        提示：在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="middle-hide-index ">
+                <h4>iOS工程师</h4>
+                <p>&nbsp;&nbsp;&nbsp;iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+            </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 "  style="margin:5% 0;max-width: 380px; ">
+            <div class="middle-hide ">
+            <table style="border: 1px solid rgb(238, 237, 237); ">
+                <tbody>
+                    <tr>
+                        <td colspan="4 " style="padding: 1rem; ">
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -18px 0;width:125px ;height:154px; "></span>
+                        </td>
+                        <td colspan="6 ">
+                              <h4 style="font-weight: bold; ">Web前端工程师</h4>
+                              <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScript/flash等各种Web技术进行产品的开发</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem; ">门槛</span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); "">
+                                    <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem;">难易程度</span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="color:rgb(153, 153, 153);padding-right: 1rem;">成长周期</span>
+                                    <span style="color:red;">1-3</span>
+                                    <span>年</span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="color:rgb(153, 153, 153);padding-right: 1rem;">缺稀程度</span>
+                                    <span style="color:red;">345</span>
+                                    <span>家公司需要</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3" colspan="4" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style="color:rgb(153, 153, 153);">
+                                            薪资待遇
+                            </span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                        0-1年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                            5k-10k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                            1-3年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                            10k-20k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style=" float: left;margin-left: 5%;">
+                                            3-5年
+                            </span>
+                                    <span style=" float: right;margin-right: 5%;">
+                                        20k-50k/月
+                            </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" style="border: 1px solid rgb(238, 237, 237);">
+                                    <strong>
+                                        有
+                                <span style="color: red;">286</span>
+                                        人在学
+                            </strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="10" style="border: 1px solid rgb(238, 237, 237);">
+                                    <span style="color:rgb(153, 153, 153);">
+                                        提示：在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础
+                            </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="middle-hide-index">
+                        <h4>iOS工程师</h4>
+                        <p>&nbsp;&nbsp;&nbsp;iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" style="margin:5% 0;max-width: 380px;">
+                <div class="middle-hide">
+                    <table style="border: 1px solid rgb(238, 237, 237);">
+                        <tbody>
+                            <tr>
+                                <td colspan="4" style="padding: 1rem;">
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -18px 0;width:125px ;height:154px; "></span>
+                                </td>
+                                <td colspan="6">
+                                    <h4 style="font-weight: bold;">Web前端工程师</h4>
+                                    <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScript/flash等各种Web技术进行产品的开发</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); ">
+                                    <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem;">门槛</span>
+                                    <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                                </td>
+                                <td colspan="5" style="border: 1px solid rgb(238, 237, 237); " ">
+                            <span style="vertical-align: middle;color:rgb(153, 153, 153);padding-right: 1rem; " >难易程度</span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                            <span style="display:inline-block;background: url(img/task8-2.png);background-position: -210px 0;width:16px ;height:16px;vertical-align: middle; "></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153);padding-right: 1rem; " >成长周期</span>
+                            <span style="color:red; ">1-3</span>
+                            <span>年</span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153);padding-right: 1rem; " >缺稀程度</span>
+                           <span style="color:red; " >345</span>
+                           <span>家公司需要</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3 " colspan="4 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153); ">
+                                            薪资待遇
+                            </span>
+                        </td>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                        0-1年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                            5k-10k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                            1-3年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                            10k-20k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style=" float: left;margin-left: 5%; ">
+                                            3-5年
+                            </span>
+                            <span style=" float: right;margin-right: 5%; ">
+                                        20k-50k/月
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <strong>
+                                        有
+                                <span style="color: red; ">286</span>
+                                        人在学
+                            </strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10 " style="border: 1px solid rgb(238, 237, 237); ">
+                            <span style="color:rgb(153, 153, 153); ">
+                                        提示：在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="middle-hide-index ">
+                <h4>iOS工程师</h4>
+                <p>&nbsp;&nbsp;&nbsp;iOS是由苹果公司开发的移动操作系统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内的iOS开发起步的相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+            </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div style="width: 100%;background-color:rgb(41, 176, 120);margin-top: 2rem;padding-bottom: 2rem;text-align: left;overflow: hidden; ">
+    <div class="row " style="margin:0; ">
+
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 " style="color: white;margin-top:2rem;margin-left:1rem; ">
+            <p style="color:white; ">技能树 — 改变你我</p>
+            <br>
+            <a style="color:white; " href="# ">关于我们</a>&nbsp;|&nbsp;
+            <a style="color:white; " href="# ">联系我们</a>&nbsp;|&nbsp;
+            <a style="color:white; " href="# ">合作企业</a>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 " style="color:white;margin-top:2rem;margin-left: 1rem; ">
+            <p>旗下网站</p>
+            <a style="color:white; " href="# ">草船云孵化器</a>&nbsp;&nbsp;&nbsp;
+            <a style="color:white; " href="# ">最强IT特训营</a><br>
+            <a style="color:white; " href="# ">葡萄藤轻游戏</a>&nbsp;&nbsp;&nbsp;
+            <a style="color:white; " href="# ">桌游精灵</a>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 " style="margin-top:2rem;margin-left: 1rem; ">
+            <div style="text-align: center;display: inline-block; ">
+                <p style="color:white; ">微信公众平台</p>
+                <span style="background:url(img/task8-1.png);background-position: -376px -437px;width: 92px;height: 92px;display: inline-block; ">
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="background-color:rgb(41, 176, 120);text-align: center;color: white;border-top: 1px solid white; " >
+    Copyright © 2015技能树 www.jnshu.com All Rights Reserved | 京ICP备13005880号
+</div>
+
+
+</body>
+</html>

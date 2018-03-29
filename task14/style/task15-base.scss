@@ -1,0 +1,319 @@
+@charset "utf-8";
+
+/*不使用的话，无法在scss中使用中文注释*/
+
+@mixin imgstyle($x, $y, $width, $height) {
+    width: $width;
+    height: $height;
+    background: url(../img/task15-1.png);
+    background-position: $x $y;
+    background-size: 5.73rem 6.27rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 625%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: .16rem;
+}
+
+.base-container {
+    padding-right: .1rem;
+    padding-left: .1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.base-top {
+    margin: .1rem auto;
+}
+
+.base-head-word {
+    color: rgb(41, 176, 120);
+}
+
+.base-head-img {
+    float: right;
+}
+
+@media only screen and (max-width: 377px) {
+    .base-head-img {
+        display: none;
+    }
+}
+
+.base-head-img1 {
+    @include imgstyle(0, 0, .25rem, .24rem);
+    display: inline-block;
+}
+
+.base-head-img2 {
+    @include imgstyle(-.25rem, 0, .25rem, .24rem);
+    display: inline-block;
+}
+
+.base-head-img3 {
+    @include imgstyle(-.505rem, 0, .25rem, .24rem);
+    display: inline-block;
+}
+
+.base-nav {
+    @extend .base-container;
+    height: .425rem;
+    background: #29b078;
+    overflow: hidden;
+    /*当浏览器分辨率小于768px时，隐藏list*/
+    transition: 0.2s ease-out;
+    img {
+        display: inline-block;
+    }
+}
+
+
+#base-nav-list {
+    float: right;
+    margin-right: 1rem;
+    line-height: .4rem;
+    list-style: none;
+    li {
+        display: inline-block;
+        margin: 0 .1rem;
+        border-bottom: 0.02rem solid transparent;
+    }
+    li:hover {
+        border-bottom: 0.02rem solid white;
+    }
+    /*触碰li标签，底部出现白色线条*/
+    a {
+        font-size: .15rem;
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*隐藏复选框*/
+
+#navmenu {
+    display: none;
+}
+
+.base-nav-button {
+    display: none;
+    float: right;
+    height: .3rem;
+    padding: .05rem;
+    border-radius: 20%;
+    span {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        display: inline-block;
+        width: .3rem;
+        height: .05rem;
+        border-top: .05rem solid #fff;
+        border-bottom: .05rem solid #fff;
+        background-color: #fff;
+        padding: .05rem 0;
+        background-clip: content-box;
+    }
+    /*汉堡按钮*/
+}
+
+.base-nav-button:hover {
+    background-color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*当页面小于768px时，修改导航栏的样式*/
+
+@media only screen and (max-width: 768px) {
+    .base-nav-button {
+        display: block;
+    }
+    #navmenu:checked+nav {
+        height: 2.2rem;
+        /*nav高度增加，显示list*/
+    }
+
+    #base-nav-list {
+        float: none;
+        margin: 0;
+        text-align: center;
+        border-top: .01rem solid #fff;
+        li {
+            margin: 0;
+            width: 100%;
+        }
+    }
+}
+
+
+.base-frame {
+    position: relative;
+    padding-bottom: 30%;
+    width: 100%;
+}
+
+.base-move+.base-move {
+    opacity: 0;
+    /*前一张图片动画结束时，下一张图片重新开始播放动画*/
+}
+
+.base-imgstyle {
+    padding-bottom: 30%;
+    width: 100%;
+    position: absolute;
+    animation-timing-function: linear;
+    /*线性代数，动画*/
+    animation-name: play;
+    /*动画名称*/
+    animation-iteration-count: infinite;
+    /*动画效果，不断循环*/
+    animation-duration: 20s;
+    /*动画时长*/
+    background-size: 100%;
+    /*图片自适应*/
+}
+
+.base-play {
+    list-style: none;
+}
+
+.base-img1 {
+    background-image: url(../img/task15-1-banner1.png);
+}
+
+.base-img2 {
+    background-image: url(../img/task15-1-banner2.png);
+}
+
+.base-img3 {
+    background-image: url(../img/task15-1-banner3.png);
+}
+
+@keyframes play {
+    0% {
+        opacity: 0;
+        z-index: 2;
+    }
+    /*隐藏到出现*/
+    5% {
+        opacity: 1;
+        z-index: 1;
+    }
+    /*停留*/
+    25% {
+        opacity: 1;
+        z-index: 1;
+    }
+    /*出现到隐藏*/
+    30% {
+        opacity: 0;
+        z-index: 0;
+    }
+    /*一直隐藏*/
+    100% {
+        opacity: 0;
+        z-index: 0;
+    }
+    /*动画效果设置*/
+}
+
+.base-move1 {
+    animation-delay: -1s;
+}
+
+.base-move2 {
+    animation-delay: 4s;
+}
+
+.base-move3 {
+    animation-delay: 9s;
+}
+
+.base-move4 {
+    animation-delay: 14s;
+}
+
+
+/*动画时间*/
+
+footer {
+    @extend .base-container;
+    padding-top: 30%;
+    /*让底部显示出来，不会被上面的轮播图挡住*/
+    background: #29b078;
+    color: #fff;
+    overflow: hidden;
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.base-bottom-style {
+    display: inline-block;
+    float: left;
+    width: 33.3%;
+    list-style: none;
+}
+
+.base-bottom-change {
+    margin-bottom: .6rem;
+}
+
+.base-bottom-website {
+    li {
+        margin-bottom: .2rem;
+        a:hover{
+            text-decoration:none;
+        }
+    }
+}
+
+.base-bottom-weixin {
+    text-align: center;
+}
+
+.base-bottom-skilltree {
+    float: left;
+    width: 100%;
+    font-size: .1rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .base-bottom-style {
+        width: 100%;
+        text-align: left;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css3轮播图</title>
+<style type="text/css">
+ #frame {
+	position:absolute;
+	width:300px;
+	height:200px;
+	overflow:hidden;
+	border-radius:5px
+}
+
+#photos img {
+	float:left;
+	width:300px;
+	height:200px
+}
+#photos {
+	position:absolute;
+	z-index:9;
+	width:calc(300px * 4);
+	/*---修改图片数量的话需要修改下面的动画参数*/
+}
+.play {
+	animation:ma 2s ease-out infinite alternate;
+}
+@keyframes ma {
+	0%,25% {
+	margin-left:0px;
+}
+30%,50% {
+	margin-left:-300px;
+}
+55%,75% {
+	margin-left:-600px;
+}
+80%,100% {
+	margin-left:-900px;
+}
+}
+</style>
+</head>
+
+<body>
+<div id="frame">
+    <div id="photos" class="play">
+        <img src="http://www.jq22.com/img/cs/500x300-1.png">
+        <img src="http://www.jq22.com/img/cs/500x300-2.png">
+        <img src="http://www.jq22.com/img/cs/500x300-3.png">
+        <img src="http://www.jq22.com/img/cs/500x300-4.png">
+    </div>
+
+</body>
+
+</html>
