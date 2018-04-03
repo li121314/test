@@ -90,14 +90,14 @@
 }
 
 /*动画时间*/
-
-.border-b{
-    border-bottom:.01rem solid #ccc;
+main{
+    margin-bottom: 1rem;
 }
+
 
 .company{
 	padding-left:.5rem;
-	font-size:.1rem;
+	font-size:.16rem;
 }
 
 .green{
@@ -106,7 +106,7 @@
 .list-title{
 	padding-bottom:.1rem;
 	width:100%!important;
-	font-size:.15rem;
+	font-size:.16rem;
 	font-weight:bold;
 	text-align:center;
 	border-bottom:.01rem solid #ccc;
@@ -118,7 +118,7 @@
 }
 
 .box{
-    float:left;
+    display:inline-block;
 }
 
 .orange{
@@ -130,10 +130,10 @@
 }
 
 .list{
-    margin:0 auto;
-	width:2.5rem;
-	font-size:.1rem;
-	text-align:left;
+    display:inline-block;
+    float:left;
+    width:25%;
+	font-size:.16rem;
 	list-style:none;
 	border:.01rem solid #ccc;
 	a{
@@ -147,9 +147,8 @@
 		background-color:#ff650e;
 	}
 	li{
-		display:block;
 		margin:.1rem auto;
-		width:1rem;
+        width:1.15rem;
 	}
 }
 
@@ -165,40 +164,33 @@
 }
 
 .list-introduce{
+    display:inline-block;
+    float:right;
+    width:70%;
     color:#999999;
-    font-size:.1rem;
+    font-size:.15rem;
     border:.01rem solid #ccc;
     list-style:none;
-    margin-bottom:.5rem;
     li{
-        padding:.1rem;
-        overflow:hidden;
-        span{
-            vertical-align:middle;
-        }
+        text-indent:.3rem;
     }
 }
-
-.list-picture{
-    float:left;
-}
-
-
-@media only screen and (max-width: 9999px) {
-    .box{
-        width:45%;
+.border-b{
+    overflow:hidden;
+    border-bottom:.01rem solid #ccc;
+    img{
+        float:left;
+    }
+    span{
+        vertical-align: middle;
     }
 }
-
 @media only screen and (max-width: 886px) {
-    .box{
+    .list,.list-introduce{
+        float:none;
         width:100%;
     }
     .list{
-        width:100%;
-
+        margin-bottom:.1rem;
     }
-     .list-introduce{
-        width:100%;
-     }
 }

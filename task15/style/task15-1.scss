@@ -15,7 +15,8 @@
 
 .box {
     float: left;
-    margin: .1rem auto;
+    margin: .5rem auto;
+    box-sizing:border-box;
     span {
         display: inline-block;
     }
@@ -122,17 +123,16 @@
 
 
 /*动画时间*/
+.over{
+    overflow:hidden;
 
-main {
-    overflow: hidden;
 }
-
 .efficiency {
     @include imgstyle(-.95rem, -.66rem, .62rem, .6rem);
 }
 
 .word-style1 {
-    font-size: .1rem;
+    font-size: .15rem;
     text-align: left;
 }
 
@@ -145,10 +145,13 @@ main {
 }
 
 .people {
-    width: 30%;
-    margin: 0 auto;
-    font-size: .1rem;
+    font-size: .15rem;
     list-style: none;
+    li{
+
+       margin:.1rem auto;
+       vertical-align:middle;
+    }
 }
 
 .littlehead {
@@ -174,9 +177,13 @@ main {
     font-weight: blod;
     font-size: .2rem;
     text-align: center;
+    span{
+        width:100%;
+    }
 }
 
 .hstudy-box-number {
+    margin-right: .1rem;
     padding: .1rem .16rem;
     color: rgb(41, 176, 120);
     font-size: .15rem;
@@ -188,28 +195,28 @@ main {
 }
 
 .hstudy-box-word {
-    width: 1rem;
+    width: 1.3rem;
     color: rgb(153, 153, 153);
-    font-size: .1rem;
+    font-size: .15rem;
     text-align: left;
     vertical-align: middle;
 }
 
 .hstudy-box-arrow {
     @include imgstyle(-.13rem, -1.12rem, .28rem, .26rem);
+    margin-left:.2rem;
     vertical-align: middle;
 }
 
 .student {
-    width: 2rem;
-    margin: 0 auto;
-    padding: 0 .1rem;
+    margin:0 .1rem;
+    padding:.3rem;
     border: .01rem solid #eeeded;
     border-radius: .1rem;
     list-style: none;
     li {
-        display: inline-block;
-        margin: .1rem 0;
+        display:block;
+        margin: .1rem auto;
     }
 }
 
@@ -242,7 +249,7 @@ main {
 }
 
 .student-introduce {
-    font-size: .1rem;
+    font-size: .13rem;
     color: rgb(153, 153, 153);
 }
 
@@ -267,6 +274,13 @@ main {
 
 .company {
     margin: 1rem 0;
+    img{
+        padding:.5rem .1rem;
+        border:.01rem solid transparent;
+    }
+    img:hover{
+        border:.01rem solid #ccc;
+    }
 }
 
 
@@ -325,6 +339,9 @@ main {
         margin-left: .5rem;
         }
     }
+    .hstudy-box-word{
+        width:2rem;
+    }
 
 }
 
@@ -345,5 +362,8 @@ main {
         li {
             display:block;
         }
+    }
+    .hstudy-box-word{
+        width:50%;
     }
 }
